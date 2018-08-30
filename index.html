@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	.collapsible {
+		background-color: #777;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
+
+	.active, .collapsible:hover {
+		background-color: #555;
+	}
+
+	.collapsible:after {
+		content: '\002B';
+		color: white;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+
+	.active:after {
+		content: "\2212";
+	}
+
+	.content {
+		padding: 0 18px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		background-color: #f1f1f1;
+	}
+</style>
+</head>
 
 <body>
-<h1>Matthew Robert Scott Gintjee</h1>
+	<h1>Matthew Robert Scott Gintjee</h1>
 
-<h2>Education</h2>
-<table>
-	<tr>
-		<td><h3>University of California, Irvine</h3></td>
-	</tr>
-	<tr>
-		<td><h3>Ventura College</h3></td>
-	</tr>
-</table>
+	<button class="CollapsibleEducation">Education</button>
+	<div class="content">
+		<button class="CollapsibleEducationUCIrvine">University Of California, Irvine</button>
+		<div class="content">
+		</div>
+		<button class="CollapsibleEducationUCIrvine">Ventura County Community College</button>
+		<div class="content">
+		</div>
+	</div>
 
-<h2>Projects</h2>
-<table>
-	<tr>
-		<td><h3>ABX Spectrum</h3></td>
-	</tr>
-	<tr>
-		<td><h3>ZapCard</h3></td>
-	</tr>
-	<tr><td><h3>Loo-LookOut</h3></td>
-	</tr>
-	<tr><td><h3>Amazon Review Predictor</h3></td>
-	</tr>
-	<tr><td><h3>Gravity Toss</h3></td>
-	</tr>
-</table>
+	<h2>Education</h2>
+	<table>
+		<tr>
+			<td><h3>University of California, Irvine</h3></td>
+		</tr>
+		<tr>
+			<td><h3>Ventura College</h3></td>
+		</tr>
+	</table>
 
-<h2>Technical</h2>
-<h3>Languages</h3>
-<h3>Frameworks</h3>
+	<h2>Projects</h2>
+	<table>
+		<tr>
+			<td><h3>ABX Spectrum</h3></td>
+		</tr>
+		<tr>
+			<td><h3>ZapCard</h3></td>
+		</tr>
+		<tr><td><h3>Loo-LookOut</h3></td>
+		</tr>
+		<tr><td><h3>Amazon Review Predictor</h3></td>
+		</tr>
+		<tr><td><h3>Gravity Toss</h3></td>
+		</tr>
+	</table>
+
+	<h2>Technical</h2>
+	<h3>Languages</h3>
+	<h3>Frameworks</h3>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </body>
 
