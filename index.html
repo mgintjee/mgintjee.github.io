@@ -3,44 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
 	.collapsible {
 		background-color: #777;
 		color: white;
@@ -84,63 +46,32 @@
 
 	<button class="collapsible">Education</button>
 	<div class="content">
-
-		<button class="accordion">University Of California, Irvine</button>
-			<div class="panel">
-				<table>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-				</table>
-			</div>
-		<button class="accordion">Ventura County Community College</button>
-			<div class="panel">
-				<table>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-				</table>
-			</div>
+		<button class="collapsible">Irvine</button>
+		<div class="content">
+			<table>
+				<tr><td>Hello</td></tr>
+				<tr><td>Hello</td></tr>
+				<tr><td>Hello</td></tr>
+			</table>
 		</div>
+		<button class="collapsible">Ventura</button>
+		<div class="content">
+			<table>
+				<tr><td>Bye</td></tr>
+				<tr><td>Bye</td></tr>
+			</table>
+
+		</div>
+	</div>
+
 	<button class="collapsible">Project</button>
 	<div class="content">
-
-		<button class="accordion">University Of California, Irvine</button>
-			<div class="panel">
-				<table>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-				</table>
-			</div>
-		<button class="accordion">Ventura County Community College</button>
-			<div class="panel">
-				<table>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-				</table>
-			</div>
-		</div>
+		
+	</div>
 	<button class="collapsible">Technical</button>
 	<div class="content">
-
-		<button class="accordion">University Of California, Irvine</button>
-			<div class="panel">
-				<table>
-					<tr><td>Hello</td></tr>
-				</table>
-			</div>
-		<button class="accordion">Ventura County Community College</button>
-			<div class="panel">
-				<table>
-					<tr><td>Hello</td></tr>
-					<tr><td>Hello</td></tr>
-				</table>
-			</div>
-		</div>
-
+		
+	</div>
 		<!--
 
 		<button class="accordion">Projects</button>
@@ -173,40 +104,40 @@
 		</div>
 	-->
 
-		<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
 
-			for (i = 0; i < coll.length; i++) {
-				coll[i].addEventListener("click", function() {
-					this.classList.toggle("active");
-					var content = this.nextElementSibling;
-					if (content.style.maxHeight){
-						content.style.maxHeight = null;
-					} else {
-						content.style.maxHeight = content.scrollHeight + "px";
-					} 
-				});
-			}
-		</script>
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			});
+		}
+	</script>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
-</script>
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
 
-	</body>
+</body>
 
-	</html>
+</html>
