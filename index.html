@@ -18,7 +18,27 @@
 }
 
 .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 	.collapsible {
@@ -67,30 +87,50 @@
 	<div class="content">
 
 		<button class="accordion">University Of California, Irvine</button>
-			<div class="content">
+			<div class="panel">
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
 			</div>
 		<button class="accordion">Ventura County Community College</button>
-			<div class="content">
+			<div class="panel">
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
 			</div>
 		</div>
 	<button class="collapsible">Project</button>
 	<div class="content">
 
 		<button class="accordion">University Of California, Irvine</button>
-			<div class="content">
+			<div class="panel">
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
 			</div>
 		<button class="accordion">Ventura County Community College</button>
-			<div class="content">
+			<div class="panel">
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
 			</div>
 		</div>
 	<button class="collapsible">Technical</button>
 	<div class="content">
 
 		<button class="accordion">University Of California, Irvine</button>
-			<div class="content">
+			<div class="panel">
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
 			</div>
 		<button class="accordion">Ventura County Community College</button>
-			<div class="content">
+			<div class="panel">
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
+				<p> Heyo the world!</p>
 			</div>
 		</div>
 
