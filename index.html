@@ -3,42 +3,42 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-	.collapsible {
-		background-color: #777;
-		color: white;
-		cursor: pointer;
-		padding: 18px;
-		width: 100%;
-		border: none;
-		text-align: left;
-		outline: none;
-		font-size: 15px;
-	}
+		.collapsible {
+			background-color: #777;
+			color: white;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
 
-	.active, .collapsible:hover {
-		background-color: #555;
-	}
+		.active, .collapsible:hover {
+			background-color: #555;
+		}
 
-	.collapsible:after {
-		content: '\002B';
-		color: white;
-		font-weight: bold;
-		float: right;
-		margin-left: 5px;
-	}
+		.collapsible:after {
+			content: '\002B';
+			color: white;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
 
-	.active:after {
-		content: "\2212";
-	} 
+		.active:after {
+			content: "\2212";
+		} 
 
-	.content {
-		padding: 0 18px;
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.2s ease-out;
-		background-color: #f1f1f1;
-	}
-</style>
+		.content {
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			background-color: #f1f1f1;
+		}
+	</style>
 </head>
 
 <body>
@@ -46,19 +46,28 @@
 
 	<button class="collapsible">Education</button>
 	<div class="content">
-		<button class="collapsible">Irvine</button>
+		<button class="collapsible">University Of California, Irvine</button>
 		<div class="content">
 			<table>
-				<tr><td>Hello</td></tr>
-				<tr><td>Hello</td></tr>
-				<tr><td>Hello</td></tr>
+				<tr>
+					<td>Degree</td>
+					<td>BS in Computer Science</td>
+				</tr>
+				<tr>
+					<td>Fall 2016 to Spring 2018</td>
+				</tr>
 			</table>
 		</div>
-		<button class="collapsible">Ventura</button>
+		<button class="collapsible">Ventura Community College</button>
 		<div class="content">
 			<table>
-				<tr><td>Bye</td></tr>
-				<tr><td>Bye</td></tr>
+				<tr>
+					<td>Degree</td>
+					<td>Certificate Of Achievement in IGETC</td>
+				</tr>
+				<tr>
+					<td>Fall 2012 to Spring 2016</td>
+				</tr>
 			</table>
 
 		</div>
@@ -66,11 +75,9 @@
 
 	<button class="collapsible">Project</button>
 	<div class="content">
-		
 	</div>
 	<button class="collapsible">Technical</button>
-	<div class="content">
-		
+	<div class="content">	
 	</div>
 		<!--
 
@@ -115,7 +122,7 @@
 				if (content.style.maxHeight){
 					content.style.maxHeight = null;
 				} else {
-					content.style.maxHeight = 5 * content.scrollHeight + "px";
+					content.style.maxHeight = 2 * content.scrollHeight + "px";
 				} 
 			});
 		}
