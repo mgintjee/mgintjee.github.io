@@ -1,3 +1,8 @@
+:root{
+    --LeftColor:red;
+    --RightColor:blue;
+}
+
 #SideMenuNav{
 	padding: 6px 16px 6px 16px;
 	text-decoration: none;
@@ -26,14 +31,29 @@
 		position: relative;
 		text-transform: uppercase;
 		text-align: right;
-		background-image: linear-gradient( to right, gray, gray);
+		background-image: linear-gradient( to right, var(--LeftColor), var(--RightColor));
 		background-position: 0 2.5em;
 		background-repeat: no-repeat;
 	}
-	
+
+	#SideMenuNav nav a:before{
+    border-radius: inherit;
+    background-image: linear-gradient(#ccc, #fff);
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.45s;
+	}
+
 	#SideMenuNav nav a:hover{
 		color: rgba(255,255,255,0.85);
-		background-image: linear-gradient( to right, rgba(255,255,255,0.85), rgba(255,255,255,0.85));
+		background-image: linear-gradient( to right, var(--RightColor), var(--LeftColor));
 		background-position: 0 2.5em;
 		background-repeat: no-repeat;
+		transition: max-width 0.2s ease;
 	}

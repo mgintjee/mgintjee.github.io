@@ -8,15 +8,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Happy Banana Studio</title>
 	<link rel="icon" href="Assets/Media/Images/TabIcon.ico">
+	<link rel="stylesheet" href="Assets/CSS/UniversalReset.css" />
+	<link rel="stylesheet" href="Assets/CSS/Body.css" />
 	<link rel="stylesheet" href="Assets/CSS/SideMenu.css" />
-	<link rel="stylesheet" href="Assets/CSS/SideMenuNav.css" />
 	<link rel="stylesheet" href="Assets/CSS/ImageProfile.css" />
 	<link rel="stylesheet" href="Assets/CSS/SideMenuContact.css" />
+	<link rel="stylesheet" href="Assets/CSS/SideMenuNav.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentWrapper.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentWelcome.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentAboutMe.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentEducation.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentProjects.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentSkills.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentContact.css" />
 </head>
-<body>
-	<section class="SideMenu">
-		<img id="ImageProfile" src="Assets/Media/Images/Image_Profile.png" alt="My Profile Picture">
-		<div class="SideMenuContact">
+<body id="Body">
+	<section id="SideMenu">
+		<img id="ImageProfile" src="Assets/Media/Images/Profile.png" alt="My Profile Picture">
+		<div id="SideMenuContact">
 					<div class="SideMenuContactHead">Name:</div>
 					<div class="SideMenuContactInfo">Matthew Gintjee</div>
 					<div class="SideMenuContactHead">Phone:</div>
@@ -27,15 +36,47 @@
 		<div id="SideMenuNav">
 			<nav>
 				<ul>
-					<li><a href="#zero" >Welcome</a></li>
-					<li><a href="#one"  >About Me</a></li>
-					<li><a href="#two"  >My Education</a></li>
-					<li><a href="#three">My Projects</a></li>
-					<li><a href="#four" >My Skills</a></li>
-					<li><a href="#five" >Contact Me</a></li>
+					<li><a href="#Welcome"  >Welcome</a></li>
+					<li><a href="#AboutMe"  >About Me</a></li>
+					<li><a href="#Education">My Education</a></li>
+					<li><a href="#Projects" >My Projects</a></li>
+					<li><a href="#Skills"   >My Skills</a></li>
+					<li><a href="#Contact"  >Contact Me</a></li>
 				</ul>
 			</nav>
 		</div>
 	</section>
+	<div id="Wrapper">
+		<section id="Welcome">
+			<div>
+				<p>Welcome</p>
+			</div>
+		</section>
+		<section id="AboutMe">
+			<div>
+				<p>About Me</p>
+			</div>
+		</section>
+		<section id="Education">
+			<div>
+				<p>Education</p>
+			</div>
+		</section>
+		<section id="Projects">
+			<div>
+				<p>Projects</p>
+			</div>
+		</section>
+		<section id="Skills">
+			<div>
+				<p>Skills</p>
+			</div>
+		</section>
+		<section id="Contact">
+			<div>
+				<p>Contact</p>
+			</div>
+		</section>
+	</div>
 </body>
 </html>
