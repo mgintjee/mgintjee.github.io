@@ -1,0 +1,31 @@
+.SideMenuContact{
+	display: block;
+	padding: 6px 16px 6px 16px;
+	text-align: center;
+}
+.SideMenuContact > .SideMenuContactHead{
+	border: 0;
+	color: white;
+	display: block;
+	font-size: .7em;
+	letter-spacing: 0.1em;
+	line-height: 1.75;
+	outline: 0;
+	position: relative;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+
+.SideMenuContact > .SideMenuContactInfo{
+	border: 0;
+	color: white;
+	display: block;
+	font-size: .8em;
+	letter-spacing: 0.1em;
+	line-height: 1.75;
+	outline: 0;
+	position: relative;
+	text-transform: uppercase;
+	text-align: right;
+}

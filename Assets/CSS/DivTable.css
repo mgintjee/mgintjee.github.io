@@ -1,0 +1,41 @@
+.DivTable{
+	display: block;
+	padding: 6px 16px 6px 16px;
+	text-align: center;
+}
+.DivTableRow{
+	display: table-row;
+}
+.DivTableBody{ 
+	display: block;
+}
+.DivTableCellLeft{
+	display: table-cell;
+	border: 0;
+	color: rgba(255, 255, 255, 0.25);
+	display: block;
+	font-size: .6em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	line-height: 1.75;
+	outline: 0;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: left;
+}
+.DivTableCellRight{
+	display: table-cell;
+	border: 0;
+	color: rgba(255, 255, 255, 0.25);
+	display: block;
+	font-size: .7em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	line-height: 1.75;
+	outline: 0;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: right;
+}
