@@ -1,0 +1,12 @@
+:root{
+    --ColorPrimary:#0C2340;
+    --ColorSecondary:#FFC72C;
+}
+
+#Education{
+	position: relative;
+	background-image: linear-gradient(to right, var(--ColorPrimary) 15%, var(--ColorSecondary) 85%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+}

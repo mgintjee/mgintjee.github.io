@@ -1,32 +1,23 @@
+:root{
+    --FontColor:#d2d2d2;
+}
+
 #SideMenuContact{
 	display: block;
 	padding: 6px 16px 6px 16px;
 	text-align: center;
+	border-style: solid
 }
-
-#SideMenuContact > .SideMenuContactHead{
-	border: 0;
-	color: white;
-	display: block;
-	font-size: .7em;
-	letter-spacing: 0.1em;
-	line-height: 1.75;
-	outline: 0;
-	position: relative;
-	text-transform: uppercase;
-	text-align: left;
-}
-
-
 #SideMenuContact > .SideMenuContactInfo{
-	border: 0;
-	color: white;
+	color: var(--FontColor);
+	padding-left: 1em;
 	display: block;
-	font-size: .8em;
+	font-size: .9em;
 	letter-spacing: 0.1em;
-	line-height: 1.75;
+	line-height: 2;
 	outline: 0;
 	position: relative;
-	text-transform: uppercase;
-	text-align: right;
+	text-align: left;
+	border-left-style: solid;
+	border-color: var(--FontColor);
 }

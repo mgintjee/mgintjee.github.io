@@ -1,11 +1,78 @@
+:root{
+    --FontColor:#d2d2d2;
+    --DarkBack:#2f2f2f;
+    --LightBack:#787878;
+    --DarkFront:#283250;
+    --LightFront:#283250;
+}
 #SideMenu {
 	padding: 2.5vh 2.5vw 2.5vh 2.5vw;
-	background: #707070;
+	background: #283250;
 	height: 100vh;
-	width: 25vw;
+	width: 20vw;
 	position: fixed;
 	overflow-x: hidden; 
 	z-index: 1;
 	top: 0;
 	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center-left;
+	min-height: 100vh;
+	overflow-y: hidden;
 }
+
+#SideMenu > #SideMenuNav{
+	padding: 6px 16px 6px 16px;
+	text-decoration: none;
+}
+	#SideMenu > #SideMenuNav nav > ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+		#SideMenu > #SideMenuNav nav > ul > li{
+			padding: 0;
+			position: relative;
+		}
+
+	#SideMenu > #SideMenuNav nav a {
+		color: var(--FontColor);
+		text-decoration: none;
+		border: 0;
+		display: block;
+		font-size: .9em;
+		font-weight: bold;
+		letter-spacing: 0.2em;
+		line-height: 3;
+		outline: 0;
+		position: relative;
+		text-transform: uppercase;
+		text-align: right;
+		background-image: linear-gradient( to right, var(--StartColor) 10%, var(--StepColor) 50%, var(--StartColor) 90%);
+		background-position: 0 2.5em;
+		background-repeat: no-repeat;
+	}
+
+	#SideMenu > #SideMenuNav nav a:before{
+    border-radius: inherit;
+    background-image: linear-gradient(#ccc, #fff);
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.45s;
+	}
+
+	#SideMenu > #SideMenuNav nav a:hover{
+		color: white;
+		background-image: linear-gradient( to right, var(--EndColor) 10%, var(--StepColor) 50%, var(--EndColor) 90%);
+		background-position: 0 2.5em;
+		background-repeat: no-repeat;
+		transition: max-width 0.2s ease;
+	}
