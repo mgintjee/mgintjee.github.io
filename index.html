@@ -8,6 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Happy Banana Studio</title>
 	<link rel="icon" href="Assets/Media/Images/TabIcon.ico">
+	<link rel="stylesheet" href="Assets/CSS/Main.css" />
+	<!--
 	<link rel="stylesheet" href="Assets/CSS/UniversalReset.css" />
 	<link rel="stylesheet" href="Assets/CSS/Body.css" />
 	<link rel="stylesheet" href="Assets/CSS/SideMenu.css" />
@@ -19,69 +21,90 @@
 	<link rel="stylesheet" href="Assets/CSS/ContentProjects.css" />
 	<link rel="stylesheet" href="Assets/CSS/ContentSkills.css" />
 	<link rel="stylesheet" href="Assets/CSS/ContentContact.css" />
+-->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="Assets/JS/SmoothScrolling.js"></script>
 </head>
 <body id="Body">
-	<section id="SideMenu">
-		<div id="SideMenuNav">
+	<section id="SideWrapper">
+		<div id="SideNavigation">
 			<nav>
 				<ul>
-					<li><a href="#Welcome"  >Welcome</a></li>
-					<li><a href="#AboutMe"  >About Me</a></li>
-					<li><a href="#Education">My Education</a></li>
-					<li><a href="#Projects" >My Projects</a></li>
-					<li><a href="#Skills"   >My Skills</a></li>
-					<li><a href="#Contact"  >Contact Me</a></li>
+					<li><a href="#ContentWelcome"  >Welcome</a></li>
+					<li><a href="#ContentAboutMe"  >About</a></li>
+					<li><a href="#ContentEducation">Education</a></li>
+					<li><a href="#ContentProjects" >Projects</a></li>
+					<li><a href="#ContentSkills"   >Skills</a></li>
+					<li><a href="#ContentContactMe">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</section>
 
-	<section id="Wrapper">
-		<section id="Welcome">
+	<section id="MainWrapper">
+		<section id="ContentWelcome">
 			<div class="inner">
 				<h1>Welcome</h1>
 				<p>Hello! This is my website, if you find any bugs or issues please contact me and inform me so i would be able to patch them</p>
-				<a href="#AboutMe">More About Me</a>
+				<a href="#ContentAboutMe">More About Me</a>
 			</div>
 		</section>
-		<section id="AboutMe">
+		<section id="ContentAboutMe">
+			<h1>About</h1>
+			<div >	</div>
+			<div>	Hello New World</div>
 			<div>
-				<h1>About Me</h1>
-	<!--
-		<div id="SideMenuContact">
-		<img id="ImageProfile" src="Assets/Media/Images/Profile.png" alt="My Profile Picture">
-			<div class="SideMenuContactInfo">Matthew Gintjee</div>
-			<br>
-			<div class="SideMenuContactInfo">(805)-302-9040</div>
-			<br>
-			<div class="SideMenuContactInfo">mgintjee@gmail.com</div>
-		</div>
-	-->
+				<img id="ImageProfile" src="Assets/Media/Images/Profile.png" alt="My Profile Picture">
 			</div>
 		</section>
-		<section id="Education">
+
+		<section id="ContentEducation">
 			<div>
 				<h1>Education</h1>
+				<h6>University of California, Irvine</h6>
+				<p>BS in CS</p>
+				<p></p>
+				<p>BS in CS</p>
+				<h6>Ventura Community College</h6>
 			</div>
 		</section>
-		<section id="Projects">
+
+		<section id="ContentProjects">
 			<div>
-				<h1>Projects</h1>
+					<ul>
+					<h1>Projects</h1>
+					<h2>ABX Spectrum</h2>
+					<h2>Zap-Card</h2>
+					<h2>Amazon Review Predictor</h2>
+					<h2>Loo-LookOut</h2>
+					<h2>Gravity Toss</h2>
+				</ul>
 			</div>
 		</section>
-		<section id="Skills">
+
+		<section id="ContentSkills">
 			<div>
 				<h1>Skills</h1>
 			</div>
 		</section>
-		<section id="Contact">
+
+		<section id="ContentContactMe">
 			<div>
 				<h1>Contact</h1>
+				<h2>Address</h2>
+				<p>731 Devonshire Drive</p>
+				<p>Oxnard, California 93030</p>
+				<p>USA</p>
+				<h2>Email</h2>
+				<p>mgintjee@gmail.com</p>
+				<h2>Phone</h2>
+				<p>(805)-302-9040</p>
+				<h2>Social</h2>
+				<p>Github</p>
 			</div>
 		</section>
 	</div>
 </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="Assets/JS/SmoothScrolling.js"></script>
+	<script src="Assets/JS/SideMenu.js"></script>
 </html>
