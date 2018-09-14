@@ -14,6 +14,15 @@
 	--GrayLight: #E5E5E5;
 	--GrayDark: #CCCCCC;
 }
+/*
+* Table Format As Divs
+*/
+		#Table { display: table; }
+		#TableRow { display: table-row; }
+		#TableHeading { display: table-header-group; }
+		#TableBody { display: table-row-group; }
+		#TableFoot { display: table-footer-group; }
+		#TableCell, #TableHead { display: table-cell; }
 
 /******************
 * Universal Reset *
@@ -28,9 +37,8 @@
 * Side Wrapper *
 ***************/
 #SideWrapper {
-	padding: 4vh 4vw 4vh 4vw;
 	height: 100vh;
-	width: 24vw;
+	width: 20vw;
 	position: fixed;
 	overflow-y: hidden;
 	overflow-x: hidden; 
@@ -42,6 +50,9 @@
 	justify-content: center;
 	min-height: 100vh;
 	background: var(--BlueLight);
+
+			border-right-style: solid;
+			border-width: thin;
 }
 
 	/**************************
@@ -55,55 +66,57 @@
 		list-style: none;
 	}
 
-	/************************************
-	* Side Wrapper Navigation HyperLink *
-	************************************/
-	#SideWrapper > #SideNavigation nav a {
-		color: black;
-		text-decoration: none;
-		display: block;
-		font-size: 1em;
-		font-weight: bold;
-		letter-spacing: 0.2em;
-		line-height: 3;
-		position: relative;
-		text-transform: uppercase;
-		text-align: right;
-	}
+		/************************************
+		* Side Wrapper Navigation HyperLink *
+		************************************/
+		#SideWrapper > #SideNavigation nav > ul > li a {
+			color: black;
+			text-decoration: none;
+			display: block;
+			font-size: 1em;
+			font-weight: bold;
+			letter-spacing: 0.2em;
+			line-height: 3;
+			position: relative;
+			text-transform: uppercase;
+			text-align: right;
+			border-top-style: solid;
+			border-width: thin;
+		}
 
-	#SideWrapper > #SideNavigation nav a:active,
-	#SideWrapper > #SideNavigation nav a:hover{
-		color: black;
-		background: var(--BlueDark);
-	}
+		#SideWrapper > #SideNavigation nav > ul > li > #LastChild {
+			border-bottom-style: solid;
+			border-width: thin;
+		}
 
-	#SideWrapper > #SideNavigation nav a.selected{
-		color: white;
-		background: var(--BlueDark);
-	}
+		#SideWrapper > #SideNavigation nav > ul > li a:active,
+		#SideWrapper > #SideNavigation nav > ul > li a:hover,
+		#SideWrapper > #SideNavigation nav > ul > li a.selected{
+			background-image: linear-gradient(to right, var(--BlueLight		), var(--GrayDark	));
+			background-repeat: 	no-repeat;	
+			background-size: 100% 100%;
+		}
+
+		#SideWrapper > #SideNavigation nav > ul > lia.selected{
+			border-left-style: double;
+			border-width: thick;
+		}
 
 /***************
 * Main Wrapper *
 ***************/
 #MainWrapper{
-	margin: 0 0 0 32vw;
+	margin: 0 0 0 20vw;
 }
 
-	/*
+	/**********************
 	* Content Backgrounds *
-	*/
-	#ContentWelcome, #ContentEducation, #ContentSkills {
+	**********************/
+	#ContentWelcome, #ContentAbout, #ContentEducation, #ContentProjects, #ContentSkills, #ContentContact{
 		background: var(--GrayDark);
-		min-height: 100vh;
+		min-height: 95vh;
+		padding-top: 5vh;
 		display: block;
-		overflow: auto;
-	}
-
-	#ContentAboutMe, #ContentProjects, #ContentContactMe {
-		background: var(--GrayDark);
-		min-height: 100vh;
-		display: block;
-		overflow: auto;
 	}
 
 	/***************
@@ -111,35 +124,67 @@
 	***************/
 
 	/* h1 Tag */
-	#ContentWelcome h1, #ContentAboutMe h1, #ContentEducation h1, #ContentProjects h1, #ContentSkills h1, #ContentContactMe h1 {
+	#ContentWelcome h1, #ContentAbout h1, #ContentEducation h1, #ContentProjects h1, #ContentSkills h1, #ContentContact h1 {
 		color: black;
 		text-decoration: none;
 		padding-left: 2.5vw;
 		display: inline-block;
 		font-size: 2em;
 		font-weight: bold;
-		letter-spacing: 0.2em;
-		line-height: 3;
-		width: 	34vw;
+		width: 35vw;
+		letter-spacing: 0.1em;
 		text-transform: uppercase;
-		background-image: linear-gradient(to right, var(--BlueLight		), var(--GrayDark	));
-		background-position: 0 2em;
+		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
 		background-repeat: 	no-repeat;	
 		background-size: 100% 100%;
+		border-left-style: double;
+		border-width: thick;
 	}
 	/* h2 Tag */
-	#ContentWelcome h2, #ContentAboutMe h2, #ContentEducation h2, #ContentProjects h2, #ContentSkills h2, #ContentContactMe h2 {
+	#ContentWelcome h2, #ContentAbout h2, #ContentEducation h2, #ContentProjects h2, #ContentSkills h2, #ContentContact h2 {
 		color: black;
 		text-decoration: none;
-		padding-left: 2.5vw;
+		margin-left: 2.5vw;
+		margin-top: 1vh;
+		padding-left: 1vw;
 		display: block;
-		font-size: 1.5em;
+		font-size: 1.25em;
 		font-weight: bold;
-		letter-spacing: 0.1em;
-		line-height: 3;
+		letter-spacing: 0.05em;
 		text-transform: uppercase;
+		border-left-style: double;
+		border-width: thick;
 	}
 
+	/* h3 Tag */
+	#ContentWelcome h3, #ContentAbout h3, #ContentEducation h3, #ContentProjects h3, #ContentSkills h3, #ContentContact h3 {
+		color: black;
+		text-decoration: none;
+		display: block;
+		font-size: 1em;
+		font-weight: bold;
+		padding-left: 1vw;
+		text-align: left;
+		margin-bottom: .5vw;
+	}
+	/* h4 Tag */
+	#ContentWelcome h4, #ContentAbout h4, #ContentEducation h4, #ContentProjects h4, #ContentSkills h4, #ContentContact h4 {
+		color: black;
+		text-decoration: none;
+		display: block;
+		font-size: 1em;
+		font-weight: bold;
+		padding-left: 1vw;
+		text-align: left;
+		border-left-style: solid;
+		border-right-style: solid;
+		border-width: thin;
+		margin-bottom: .5vw;
+	}
+
+	/* p Tag */
+	#ContentWelcome p, #ContentAbout p, #ContentEducation p, #ContentProjects p, #ContentSkills p, #ContentContact p {
+	}
 	/******************
 	* Content Welcome *
 	******************/
@@ -153,16 +198,27 @@
 	/*******************
 	* Content About Me *
 	*******************/
-	#ContentAboutMe img{
-		width: 	35vw;
+	#ContentAbout img{
+		width: 	15vw;
 		border-radius: 	17.5vw;
 	}
 
 	/*********************
 	* Content Eductation *
 	*********************/
-	#ContentEducation{
+	#ContentEducation {
 	}
+
+		/***************************
+		* Content Eductation Inner *
+		***************************/
+		#ContentEducation > #Table {
+			width: 35vw;
+			margin: 0 0 0 5vw;
+		}
+		#ContentEducation > #TableCell {
+			min-width: 10vw;
+		}
 
 	/*******************
 	* Content Projects *
@@ -179,5 +235,5 @@
 	/*********************
 	* Content Contact Me *
 	*********************/
-	#ContentContactMe{
+	#ContentContact{
 	}

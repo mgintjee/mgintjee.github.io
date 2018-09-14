@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="Assets/CSS/ImageProfile.css" />
 	<link rel="stylesheet" href="Assets/CSS/ContentWrapper.css" />
 	<link rel="stylesheet" href="Assets/CSS/ContentWelcome.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentAboutMe.css" />
+	<link rel="stylesheet" href="Assets/CSS/ContentAbout.css" />
 	<link rel="stylesheet" href="Assets/CSS/ContentEducation.css" />
 	<link rel="stylesheet" href="Assets/CSS/ContentProjects.css" />
 	<link rel="stylesheet" href="Assets/CSS/ContentSkills.css" />
@@ -30,11 +30,11 @@
 			<nav>
 				<ul>
 					<li><a href="#ContentWelcome"  >Welcome</a></li>
-					<li><a href="#ContentAboutMe"  >About</a></li>
+					<li><a href="#ContentAbout"  >About</a></li>
 					<li><a href="#ContentEducation">Education</a></li>
 					<li><a href="#ContentProjects" >Projects</a></li>
 					<li><a href="#ContentSkills"   >Skills</a></li>
-					<li><a href="#ContentContactMe">Contact</a></li>
+					<li><a id="LastChild" href="#ContentContact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -45,10 +45,10 @@
 			<div class="inner">
 				<h1>Welcome</h1>
 				<p>Hello! This is my website, if you find any bugs or issues please contact me and inform me so i would be able to patch them</p>
-				<a href="#ContentAboutMe">More About Me</a>
+				<a href="#ContentAbout">More About Me</a>
 			</div>
 		</section>
-		<section id="ContentAboutMe">
+		<section id="ContentAbout">
 			<h1>About</h1>
 			<div >	</div>
 			<div>	Hello New World</div>
@@ -58,13 +58,65 @@
 		</section>
 
 		<section id="ContentEducation">
-			<div>
 				<h1>Education</h1>
-				<h6>University of California, Irvine</h6>
-				<p>BS in CS</p>
-				<p></p>
-				<p>BS in CS</p>
-				<h6>Ventura Community College</h6>
+				<h2>University of California, Irvine</h2>
+				<div id="Table">
+					<div id="TableBody">
+						<div id="TableRow">
+							<div id="TableCell"><h3>Degree</h3></div>
+							<div id="TableCell"><p>Bachelor of Science</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>Major</h3></div>
+							<div id="TableCell"><p>Computer Science</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>Specialization</h3></div>
+							<div id="TableCell"><p>Intelligent Systems</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>Duration</h3></div>
+							<div id="TableCell"><p>Fall 2016 - Spring 2018</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>GPA</h3></div>
+							<div id="TableCell"><p>3.694</p></div>
+						</div>
+					<div id="TableRow">
+							<div id="TableCell"><h3>Latin Honor</h3></div>
+							<div id="TableCell"><p>Cum Laude</p></div>
+					</div>
+					<div id="TableRow">
+							<div id="TableCell"><h3>Dean's List</h3></div>
+							<div id="TableCell"><p>Spring 2018, Fall 2017, Spring 2017, Winter 2016, Fall 2016</p></div>
+					</div>
+					</div>
+			</div>
+				<h2>Ventura Community College</h2>
+				<div id="Table">
+					<div id="TableBody">
+						<div id="TableRow">
+							<div id="TableCell"><h3>Degree</h3></div>
+							<div id="TableCell"><p>Certificate of Achievement</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>Major</h3></div>
+							<div id="TableCell"><p>IGETC/General Education</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>Duration</h3></div>
+							<div id="TableCell"><p>Fall 2012 - Spring 2016</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>GPA</h3></div>
+							<div id="TableCell"><p>3.65</p></div>
+						</div>
+						<div id="TableRow">
+							<div id="TableCell"><h3>Dean's List</h3></div>
+							<div id="TableCell"><p>Fall 2015, Spring 2015, Spring 2014, Fall 2013
+</p></div>
+						</div>
+					</div>
 			</div>
 		</section>
 
@@ -87,7 +139,7 @@
 			</div>
 		</section>
 
-		<section id="ContentContactMe">
+		<section id="ContentContact">
 			<div>
 				<h1>Contact</h1>
 				<h2>Address</h2>
@@ -102,7 +154,6 @@
 				<p>Github</p>
 			</div>
 		</section>
-	</div>
 </body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="Assets/JS/SmoothScrolling.js"></script>
