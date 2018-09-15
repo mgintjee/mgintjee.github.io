@@ -17,12 +17,15 @@
 /*
 * Table Format As Divs
 */
-		#Table { display: table; }
-		#TableRow { display: table-row; }
+		#Table { display: table;
+			width: 35vw;
+			margin: 0 0 0 5vw; }
+		#TableRow { display: table-row;}
 		#TableHeading { display: table-header-group; }
 		#TableBody { display: table-row-group; }
 		#TableFoot { display: table-footer-group; }
-		#TableCell, #TableHead { display: table-cell; }
+		#TableCell, #TableHead { display: table-cell;
+			min-width: 10vw; }
 
 /******************
 * Universal Reset *
@@ -107,14 +110,15 @@
 ***************/
 #MainWrapper{
 	margin: 0 0 0 20vw;
+	background-image: linear-gradient(to right, var(--GrayDark)80%, var(--BlueLight));
 }
 
 	/**********************
 	* Content Backgrounds *
 	**********************/
 	#ContentWelcome, #ContentAbout, #ContentEducation, #ContentProjects, #ContentSkills, #ContentContact{
-		background: var(--GrayDark);
 		min-height: 95vh;
+		width: 60vw;
 		padding-top: 5vh;
 		display: block;
 	}
@@ -237,3 +241,7 @@
 	*********************/
 	#ContentContact{
 	}
+		#ContentContact > #Table {
+			width: 35vw;
+			margin: 0 0 0 2.5vw;
+		}

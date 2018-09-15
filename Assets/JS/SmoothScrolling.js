@@ -19,3 +19,7 @@ event.preventDefault();
 });
 });
 
+window.onscroll = function(){
+  console.log("User Is Scrolling");
+};
+
