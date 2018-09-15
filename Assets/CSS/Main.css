@@ -14,6 +14,15 @@
 	--GrayLight: #E5E5E5;
 	--GrayDark: #CCCCCC;
 }
+/******************
+* Universal Reset *
+******************/
+*   {
+	border: 0;
+	margin:0;
+	padding:0;
+}
+
 /*
 * Table Format As Divs
 */
@@ -27,14 +36,6 @@
 		#TableCell, #TableHead { display: table-cell;
 			min-width: 10vw; }
 
-/******************
-* Universal Reset *
-******************/
-*   {
-	border: 0;
-	margin:0;
-	padding:0;
-}
 
 /***************
 * Side Wrapper *
@@ -154,7 +155,11 @@
 		display: block;
 		font-size: 1.25em;
 		font-weight: bold;
+		width: 30vw;
 		letter-spacing: 0.05em;
+		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
+		background-repeat: 	no-repeat;	
+		background-size: 100% 100%;
 		text-transform: uppercase;
 		border-left-style: double;
 		border-width: thick;
