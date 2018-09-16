@@ -26,15 +26,26 @@
 /*
 * Table Format As Divs
 */
-		#Table { display: table;
-			width: 35vw;
-			margin: 0 0 0 5vw; }
-		#TableRow { display: table-row;}
-		#TableHeading { display: table-header-group; }
-		#TableBody { display: table-row-group; }
-		#TableFoot { display: table-footer-group; }
-		#TableCell, #TableHead { display: table-cell;
-			min-width: 10vw; }
+#Table { display: table;
+	width: 35vw;
+	margin: 0 0 0 5vw; 
+}
+#TableRow { 
+	display: table-row;
+}
+#TableHeading { 
+	display: table-header-group; 
+}
+#TableBody { 
+	display: table-row-group; 
+}
+#TableFoot { 
+	display: table-footer-group; 
+}
+#TableCell, #TableHead { 
+	display: table-cell;
+	min-width: 10vw; 
+}
 
 
 /***************
@@ -55,56 +66,56 @@
 	min-height: 100vh;
 	background: var(--BlueLight);
 
-			border-right-style: solid;
-			border-width: thin;
+	border-right-style: solid;
+	border-width: thin;
 }
 
-	/**************************
-	* Side Wrapper Navigation *
-	**************************/
+/**************************
+* Side Wrapper Navigation *
+**************************/
 
-	/*****************************************
-	* Side Wrapper Navigation Unordered List *
-	*****************************************/
-	#SideWrapper > #SideNavigation nav > ul{
-		list-style: none;
-	}
+/*****************************************
+* Side Wrapper Navigation Unordered List *
+*****************************************/
+#SideWrapper > #SideNavigation nav > ul{
+	list-style: none;
+}
 
-		/************************************
-		* Side Wrapper Navigation HyperLink *
-		************************************/
-		#SideWrapper > #SideNavigation nav > ul > li a {
-			color: black;
-			text-decoration: none;
-			display: block;
-			font-size: 1em;
-			font-weight: bold;
-			letter-spacing: 0.2em;
-			line-height: 3;
-			position: relative;
-			text-transform: uppercase;
-			text-align: right;
-			border-top-style: solid;
-			border-width: thin;
-		}
+/************************************
+* Side Wrapper Navigation HyperLink *
+************************************/
+#SideWrapper > #SideNavigation nav > ul > li a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	line-height: 3;
+	position: relative;
+	text-transform: uppercase;
+	text-align: right;
+	border-top-style: solid;
+	border-width: thin;
+}
 
-		#SideWrapper > #SideNavigation nav > ul > li > #LastChild {
-			border-bottom-style: solid;
-			border-width: thin;
-		}
+#SideWrapper > #SideNavigation nav > ul > li > #LastChild {
+	border-bottom-style: solid;
+	border-width: thin;
+}
 
-		#SideWrapper > #SideNavigation nav > ul > li a:active,
-		#SideWrapper > #SideNavigation nav > ul > li a:hover,
-		#SideWrapper > #SideNavigation nav > ul > li a.selected{
-			background-image: linear-gradient(to right, var(--BlueLight		), var(--GrayDark	));
-			background-repeat: 	no-repeat;	
-			background-size: 100% 100%;
-		}
+#SideWrapper > #SideNavigation nav > ul > li a:active,
+#SideWrapper > #SideNavigation nav > ul > li a:hover,
+#SideWrapper > #SideNavigation nav > ul > li a.selected{
+	background-image: linear-gradient(to right, var(--BlueLight		), var(--GrayDark	));
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%;
+}
 
-		#SideWrapper > #SideNavigation nav > ul > lia.selected{
-			border-left-style: double;
-			border-width: thick;
-		}
+#SideWrapper > #SideNavigation nav > ul > lia.selected{
+	border-left-style: double;
+	border-width: thick;
+}
 
 /***************
 * Main Wrapper *
@@ -114,139 +125,139 @@
 	background-image: linear-gradient(to right, var(--GrayDark)80%, var(--BlueLight));
 }
 
-	/**********************
-	* Content Backgrounds *
-	**********************/
-	#ContentWelcome, #ContentAbout, #ContentEducation, #ContentProjects, #ContentSkills, #ContentContact{
-		min-height: 95vh;
-		width: 60vw;
-		padding-top: 5vh;
-		display: block;
-	}
+/**********************
+* Content Backgrounds *
+**********************/
+#ContentWelcome, #ContentAbout, #ContentEducation, #ContentProjects, #ContentSkills, #ContentContact{
+	min-height: 95vh;
+	width: 60vw;
+	padding-top: 5vh;
+	display: block;
+}
 
-	/***************
-	* Content Tags *
-	***************/
+/***************
+* Content Tags *
+***************/
 
-	/* h1 Tag */
-	#ContentWelcome h1, #ContentAbout h1, #ContentEducation h1, #ContentProjects h1, #ContentSkills h1, #ContentContact h1 {
-		color: black;
-		text-decoration: none;
-		padding-left: 2.5vw;
-		display: inline-block;
-		font-size: 2em;
-		font-weight: bold;
-		width: 35vw;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
-		background-repeat: 	no-repeat;	
-		background-size: 100% 100%;
-		border-left-style: double;
-		border-width: thick;
-	}
-	/* h2 Tag */
-	#ContentWelcome h2, #ContentAbout h2, #ContentEducation h2, #ContentProjects h2, #ContentSkills h2, #ContentContact h2 {
-		color: black;
-		text-decoration: none;
-		margin-left: 2.5vw;
-		margin-top: 1vh;
-		padding-left: 1vw;
-		display: block;
-		font-size: 1.25em;
-		font-weight: bold;
-		width: 30vw;
-		letter-spacing: 0.05em;
-		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
-		background-repeat: 	no-repeat;	
-		background-size: 100% 100%;
-		text-transform: uppercase;
-		border-left-style: double;
-		border-width: thick;
-	}
+/* h1 Tag */
+#ContentWelcome h1, #ContentAbout h1, #ContentEducation h1, #ContentProjects h1, #ContentSkills h1, #ContentContact h1 {
+	color: black;
+	text-decoration: none;
+	padding-left: 2.5vw;
+	display: inline-block;
+	font-size: 2em;
+	font-weight: bold;
+	width: 35vw;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%;
+	border-left-style: double;
+	border-width: thick;
+}
+/* h2 Tag */
+#ContentWelcome h2, #ContentAbout h2, #ContentEducation h2, #ContentProjects h2, #ContentSkills h2, #ContentContact h2 {
+	color: black;
+	text-decoration: none;
+	margin-left: 2.5vw;
+	margin-top: 1vh;
+	padding-left: 1vw;
+	display: block;
+	font-size: 1.25em;
+	font-weight: bold;
+	width: 30vw;
+	letter-spacing: 0.05em;
+	background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%;
+	text-transform: uppercase;
+	border-left-style: double;
+	border-width: thick;
+}
 
-	/* h3 Tag */
-	#ContentWelcome h3, #ContentAbout h3, #ContentEducation h3, #ContentProjects h3, #ContentSkills h3, #ContentContact h3 {
-		color: black;
-		text-decoration: none;
-		display: block;
-		font-size: 1em;
-		font-weight: bold;
-		padding-left: 1vw;
-		text-align: left;
-		margin-bottom: .5vw;
-	}
-	/* h4 Tag */
-	#ContentWelcome h4, #ContentAbout h4, #ContentEducation h4, #ContentProjects h4, #ContentSkills h4, #ContentContact h4 {
-		color: black;
-		text-decoration: none;
-		display: block;
-		font-size: 1em;
-		font-weight: bold;
-		padding-left: 1vw;
-		text-align: left;
-		border-left-style: solid;
-		border-right-style: solid;
-		border-width: thin;
-		margin-bottom: .5vw;
-	}
+/* h3 Tag */
+#ContentWelcome h3, #ContentAbout h3, #ContentEducation h3, #ContentProjects h3, #ContentSkills h3, #ContentContact h3 {
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	padding-left: 1vw;
+	text-align: left;
+	margin-bottom: .5vw;
+}
+/* h4 Tag */
+#ContentWelcome h4, #ContentAbout h4, #ContentEducation h4, #ContentProjects h4, #ContentSkills h4, #ContentContact h4 {
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	padding-left: 1vw;
+	text-align: left;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-width: thin;
+	margin-bottom: .5vw;
+}
 
-	/* p Tag */
-	#ContentWelcome p, #ContentAbout p, #ContentEducation p, #ContentProjects p, #ContentSkills p, #ContentContact p {
-	}
-	/******************
-	* Content Welcome *
-	******************/
-	#ContentWelcome {
-	}
+/* p Tag */
+#ContentWelcome p, #ContentAbout p, #ContentEducation p, #ContentProjects p, #ContentSkills p, #ContentContact p {
+}
+/******************
+* Content Welcome *
+******************/
+#ContentWelcome {
+}
 
-		/************************
-		* Content Welcome Inner *
-		************************/
+/************************
+* Content Welcome Inner *
+************************/
 
-	/*******************
-	* Content About Me *
-	*******************/
-	#ContentAbout img{
-		width: 	15vw;
-		border-radius: 	17.5vw;
-	}
+/*******************
+* Content About Me *
+*******************/
+#ContentAbout img{
+	width: 	15vw;
+	border-radius: 	17.5vw;
+}
 
-	/*********************
-	* Content Eductation *
-	*********************/
-	#ContentEducation {
-	}
+/*********************
+* Content Eductation *
+*********************/
+#ContentEducation {
+}
 
-		/***************************
-		* Content Eductation Inner *
-		***************************/
-		#ContentEducation > #Table {
-			width: 35vw;
-			margin: 0 0 0 5vw;
-		}
-		#ContentEducation > #TableCell {
-			min-width: 10vw;
-		}
+/***************************
+* Content Eductation Inner *
+***************************/
+#ContentEducation > #Table {
+	width: 35vw;
+	margin: 0 0 0 5vw;
+}
+#ContentEducation > #TableCell {
+	min-width: 10vw;
+}
 
-	/*******************
-	* Content Projects *
-	*******************/
-	#ContentProjects{
-	}
+/*******************
+* Content Projects *
+*******************/
+#ContentProjects{
+}
 
-	/*****************
-	* Content Skills *
-	*****************/
-	#ContentSkills{
-	}
+/*****************
+* Content Skills *
+*****************/
+#ContentSkills{
+}
 
-	/*********************
-	* Content Contact Me *
-	*********************/
-	#ContentContact{
-	}
-		#ContentContact > #Table {
-			width: 35vw;
-			margin: 0 0 0 2.5vw;
-		}
+/*********************
+* Content Contact Me *
+*********************/
+#ContentContact{
+}
+#ContentContact > #Table {
+	width: 35vw;
+	margin: 0 0 0 2.5vw;
+}
