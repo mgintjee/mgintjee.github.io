@@ -28,7 +28,6 @@
 */
 #Table { display: table;
 	width: 35vw;
-	margin: 0 0 0 5vw; 
 }
 #TableRow { 
 	display: table-row;
@@ -44,7 +43,13 @@
 }
 #TableCell, #TableHead { 
 	display: table-cell;
-	min-width: 10vw; 
+	border: .25vh solid transparent;
+}
+#TableCell{
+	width: 25vw;
+}
+#TableHead{
+	width: 10vw;
 }
 
 
@@ -96,12 +101,9 @@
 	text-transform: uppercase;
 	text-align: right;
 	border-top-style: solid;
-	border-width: thin;
-}
-
-#SideWrapper > #SideNavigation nav > ul > li > #LastChild {
 	border-bottom-style: solid;
 	border-width: thin;
+	margin-bottom:-1px;
 }
 
 #SideWrapper > #SideNavigation nav > ul > li a:active,
@@ -112,9 +114,10 @@
 	background-size: 100% 100%;
 }
 
-#SideWrapper > #SideNavigation nav > ul > lia.selected{
+#SideWrapper > #SideNavigation nav > ul > li a.selected{
+	margin-left: 1px;
 	border-left-style: double;
-	border-width: thick;
+	border-left-width: thick;
 }
 
 /***************
@@ -171,7 +174,6 @@
 	background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
 	background-repeat: 	no-repeat;	
 	background-size: 100% 100%;
-	text-transform: uppercase;
 	border-left-style: double;
 	border-width: thick;
 }
@@ -183,27 +185,20 @@
 	display: block;
 	font-size: 1em;
 	font-weight: bold;
-	padding-left: 1vw;
-	text-align: left;
-	margin-bottom: .5vw;
-}
-/* h4 Tag */
-#ContentWelcome h4, #ContentAbout h4, #ContentEducation h4, #ContentProjects h4, #ContentSkills h4, #ContentContact h4 {
-	color: black;
-	text-decoration: none;
-	display: block;
-	font-size: 1em;
-	font-weight: bold;
-	padding-left: 1vw;
 	text-align: left;
 	border-left-style: solid;
-	border-right-style: solid;
 	border-width: thin;
-	margin-bottom: .5vw;
+	padding-left: 1vw; 
 }
 
 /* p Tag */
 #ContentWelcome p, #ContentAbout p, #ContentEducation p, #ContentProjects p, #ContentSkills p, #ContentContact p {
+	padding-left: 1vw;
+}
+
+/* p Tag */
+#ContentWelcome a, #ContentAbout a, #ContentEducation a, #ContentProjects a, #ContentSkills a, #ContentContact a {
+	padding-left: 1vw;
 }
 /******************
 * Content Welcome *
@@ -233,17 +228,17 @@
 * Content Eductation Inner *
 ***************************/
 #ContentEducation > #Table {
-	width: 35vw;
 	margin: 0 0 0 5vw;
-}
-#ContentEducation > #TableCell {
-	min-width: 10vw;
 }
 
 /*******************
 * Content Projects *
 *******************/
 #ContentProjects{
+}
+
+#ContentProjects > #Table {
+	margin: 0 0 0 5vw;
 }
 
 /*****************
@@ -258,6 +253,5 @@
 #ContentContact{
 }
 #ContentContact > #Table {
-	width: 35vw;
 	margin: 0 0 0 2.5vw;
 }

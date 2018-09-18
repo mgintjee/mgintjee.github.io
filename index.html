@@ -9,18 +9,18 @@
 	<title>Happy Banana Studio</title>
 	<link rel="icon" href="Assets/Media/Images/TabIcon.ico">
 	<link rel="stylesheet" href="Assets/CSS/Main.css" />
-	<!--
-	<link rel="stylesheet" href="Assets/CSS/UniversalReset.css" />
-	<link rel="stylesheet" href="Assets/CSS/Body.css" />
-	<link rel="stylesheet" href="Assets/CSS/SideMenu.css" />
-	<link rel="stylesheet" href="Assets/CSS/ImageProfile.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentWrapper.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentWelcome.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentAbout.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentEducation.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentProjects.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentSkills.css" />
-	<link rel="stylesheet" href="Assets/CSS/ContentContact.css" />
+<!--
+<link rel="stylesheet" href="Assets/CSS/UniversalReset.css" />
+<link rel="stylesheet" href="Assets/CSS/Body.css" />
+<link rel="stylesheet" href="Assets/CSS/SideMenu.css" />
+<link rel="stylesheet" href="Assets/CSS/ImageProfile.css" />
+<link rel="stylesheet" href="Assets/CSS/ContentWrapper.css" />
+<link rel="stylesheet" href="Assets/CSS/ContentWelcome.css" />
+<link rel="stylesheet" href="Assets/CSS/ContentAbout.css" />
+<link rel="stylesheet" href="Assets/CSS/ContentEducation.css" />
+<link rel="stylesheet" href="Assets/CSS/ContentProjects.css" />
+<link rel="stylesheet" href="Assets/CSS/ContentSkills.css" />
+<link rel="stylesheet" href="Assets/CSS/ContentContact.css" />
 -->
 
 </head>
@@ -29,236 +29,290 @@
 		<div id="SideNavigation">
 			<nav>
 				<ul>
-					<li><a href="#ContentWelcome"  >Welcome</a></li>
-					<li><a href="#ContentAbout"  >About</a></li>
-					<li><a href="#ContentEducation">Education</a></li>
-					<li><a href="#ContentProjects" >Projects</a></li>
-					<li><a href="#ContentSkills"   >Skills</a></li>
-					<li><a id="LastChild" href="#ContentContact">Contact</a></li>
+					<li><a id="SidebarWelcome" href="#ContentWelcome"  >Welcome</a></li>
+					<li><a id="SidebarAbout" href="#ContentAbout"  >About</a></li>
+					<li><a id="SidebarEducation" href="#ContentEducation">Education</a></li>
+					<li><a id="SidebarProjects" href="#ContentProjects" >Projects</a></li>
+					<li><a id="SidebarSkills" href="#ContentSkills"   >Skills</a></li>
+					<li><a id="SidebarContact" href="#ContentContact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</section>
 
 	<section id="MainWrapper">
+
 		<section id="ContentWelcome">
-			<div class="inner">
-				<h1>Welcome</h1>
-				<p>Hello! This is my website, if you find any bugs or issues please contact me and inform me so i would be able to patch them</p>
-				<a href="#ContentAbout">More About Me</a>
-			</div>
+			<h1 id="HeaderWelcome">Welcome</h1>
+			<p>Hello! This is my website, if you find any bugs or issues please contact me and inform me so i would be able to patch them</p>
+			<a href="#ContentAbout">More About Me</a>
 		</section>
+
 		<section id="ContentAbout">
-			<h1>About</h1>
-			<div >	</div>
-			<div>	Hello New World</div>
+			<h1 id="HeaderAbout">About Me</h1>
+			<div>Hello New World</div>
 			<div>
 				<img id="ImageProfile" src="Assets/Media/Images/Profile.png" alt="My Profile Picture">
 			</div>
 		</section>
 
 		<section id="ContentEducation">
-				<h1>Education</h1>
-				<h2>University of California, Irvine</h2>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Degree</h3></div>
-							<div id="TableCell"><p>Bachelor of Science</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Major</h3></div>
-							<div id="TableCell"><p>Computer Science</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Specialization</h3></div>
-							<div id="TableCell"><p>Intelligent Systems</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Duration</h3></div>
-							<div id="TableCell"><p>Fall 2016 - Spring 2018</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>GPA</h3></div>
-							<div id="TableCell"><p>3.694</p></div>
-						</div>
+			<h1 id="HeaderEducation">Education</h1>
+			<h2>University of California, Irvine</h2>
+			<div id="Table">
+				<div id="TableBody">
 					<div id="TableRow">
-							<div id="TableCell"><h3>Latin Honor</h3></div>
-							<div id="TableCell"><p>Cum Laude</p></div>
+						<div id="TableHead"><h3>Degree</h3></div>
+						<div id="TableCell"><p>Bachelor of Science</p></div>
 					</div>
 					<div id="TableRow">
-							<div id="TableCell"><h3>Dean's List</h3></div>
-							<div id="TableCell"><p>Spring 2018, Fall 2017, Spring 2017, Winter 2016, Fall 2016</p></div>
+						<div id="TableHead"><h3>Major</h3></div>
+						<div id="TableCell"><p>Computer Science</p></div>
 					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Specialization</h3></div>
+						<div id="TableCell"><p>Intelligent Systems</p></div>
 					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Duration</h3></div>
+						<div id="TableCell"><p>Fall 2016 - Spring 2018</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>GPA</h3></div>
+						<div id="TableCell"><p>3.694</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Latin Honors</h3></div>
+						<div id="TableCell"><p>Cum Laude</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Dean's List</h3></div>
+						<div id="TableCell"><p>Spring 2018, Fall 2017, Spring 2017, Winter 2016, Fall 2016</p></div>
+					</div>
+				</div>
 			</div>
-				<h2>Ventura Community College</h2>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Degree</h3></div>
-							<div id="TableCell"><p>Certificate of Achievement</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Major</h3></div>
-							<div id="TableCell"><p>IGETC/General Education</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Duration</h3></div>
-							<div id="TableCell"><p>Fall 2012 - Spring 2016</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>GPA</h3></div>
-							<div id="TableCell"><p>3.65</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Dean's List</h3></div>
-							<div id="TableCell"><p>Fall 2015, Spring 2015, Spring 2014, Fall 2013
-</p></div>
-						</div>
+			<h2>Ventura Community College</h2>
+			<div id="Table">
+				<div id="TableBody">
+					<div id="TableRow">
+						<div id="TableHead"><h3>Degree</h3></div>
+						<div id="TableCell"><p>Certificate of Achievement</p></div>
 					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Major</h3></div>
+						<div id="TableCell"><p>IGETC/General Education</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Duration</h3></div>
+						<div id="TableCell"><p>Fall 2012 - Spring 2016</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>GPA</h3></div>
+						<div id="TableCell"><p>3.65</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Dean's List</h3></div>
+						<div id="TableCell"><p>Fall 2015, Spring 2015, Spring 2014, Fall 2013
+						</p></div>
+					</div>
+				</div>
 			</div>
 		</section>
-			<section id="ContentProjects">
-				<h1>Projects</h1>
-				<h2>ABX Spectrum</h2>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Platform</h3></div>
-							<div id="TableCell"><p>Android</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Language</h3></div>
-							<div id="TableCell"><p>Java</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Released</h3></div>
-							<div id="TableCell"><p>Summer 2017</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Updated</h3></div>
-							<div id="TableCell"><p>Spring 2018</p></div>
-						</div>
-					</div>
-				</div>
-				<h2>Zap Card</h2>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Platform</h3></div>
-							<div id="TableCell"><p>Android</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Language</h3></div>
-							<div id="TableCell"><p>Java</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Released</h3></div>
-							<div id="TableCell"><p>Summer 2017</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Updated</h3></div>
-							<div id="TableCell"><p>Spring 2018</p></div>
-						</div>
-					</div>
-				</div>
-				<h2>Loo-LookOut</h2>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Platform</h3></div>
-							<div id="TableCell"><p>Android</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Language</h3></div>
-							<div id="TableCell"><p>Java</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Released</h3></div>
-							<div id="TableCell"><p>Winter 2017</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Updated</h3></div>
-							<div id="TableCell"><p>Summer 2018</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Github</h3></div>
-							<div id="TableCell"><a href="https://github.com/mgintjee/LooLookOut">Go to Repo</a></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Where to Use</h3></div>
-							<div id="TableCell"><a>Available on Google Playstore</a></div>
-						</div>
-					</div>
-				</div>
-				<h2>Amazon Review Predictor</h2>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Platform</h3></div>
-							<div id="TableCell"><p>Website</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Language</h3></div>
-							<div id="TableCell"><p>Python</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Released</h3></div>
-							<div id="TableCell"><p>Winter 2017</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Updated</h3></div>
-							<div id="TableCell"><p>Spring 2017</p></div>
-						</div>
-					</div>
-				</div>
-				<h2>Gravity Toss</h2>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Platform</h3></div>
-							<div id="TableCell"><p>Android</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Language</h3></div>
-							<div id="TableCell"><p>C#</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Released</h3></div>
-							<div id="TableCell"><p>Summer 2017</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Updated</h3></div>
-							<div id="TableCell"><p>Summer 2018</p></div>
-						</div>
-					</div>
-				</div>
-			</section>
 
-			<section id="ContentSkills">
-				<div>
-					<h1>Skills</h1>
-				</div>
-			</section>
-
-			<section id="ContentContact">
-				<h1>Contact</h1>
-				<div id="Table">
-					<div id="TableBody">
-						<div id="TableRow">
-							<div id="TableCell"><h3>Email</h3></div>
-							<div id="TableCell"><p>mgintjee@gmail.com</p></div>
-						</div>
-						<div id="TableRow">
-							<div id="TableCell"><h3>Social</h3></div>
-							<div id="TableCell"><p>Github</p></div>
-						</div>
+		<section id="ContentProjects">
+			<h1 id="HeaderProjects">Projects</h1>
+			<h2>ABX Spectrum</h2>
+			<div id="Table">
+				<div id="TableBody">
+					<div id="TableRow">
+						<div id="TableHead"><h3>Platform</h3></div>
+						<div id="TableCell"><p>Android</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Language</h3></div>
+						<div id="TableCell"><p>Java</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Released</h3></div>
+						<div id="TableCell"><p>Summer 2017</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Updated</h3></div>
+						<div id="TableCell"><p>Spring 2018</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Summary</h3></div>
+						<div id="TableCell"><p>Pharmacy App</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Google Play</h3></div>
+						<div id="TableCell"><a href="https://play.google.com/store/apps/details?id=com.happybananastudio.abxspectrum">Available Here</a></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Github Repository</h3></div>
+						<div id="TableCell"><a href="https://github.com/mgintjee/ABX-spectrum">Available Here</a></div>
 					</div>
 				</div>
-			</section>
-</body>
+			</div>
+			<h2>Zap-Card</h2>
+			<div id="Table">
+				<div id="TableBody">
+					<div id="TableRow">
+						<div id="TableHead"><h3>Platform</h3></div>
+						<div id="TableCell"><p>Android</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Language</h3></div>
+						<div id="TableCell"><p>Java</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Released</h3></div>
+						<div id="TableCell"><p>Summer 2017</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Updated</h3></div>
+						<div id="TableCell"><p>Spring 2018</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Summary</h3></div>
+						<div id="TableCell"><p>Soccer Coach roster assistant</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Google Play</h3></div>
+						<div id="TableCell"><a href="https://play.google.com/store/apps/details?id=com.happybananastudio.zapcarddigitalrosterassistant">Available Here</a></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Github Repository</h3></div>
+						<div id="TableCell"><a href="https://github.com/mgintjee/Zap-Card-Digital-Roster-Assistant">Available Here</a></div>
+					</div>
+				</div>
+			</div>
+			<h2>Loo-LookOut</h2>
+			<p></p>
+			<div id="Table">
+				<div id="TableBody">
+					<div id="TableRow">
+						<div id="TableHead"><h3>Platform</h3></div>
+						<div id="TableCell"><p>Android</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Language</h3></div>
+						<div id="TableCell"><p>Java</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Released</h3></div>
+						<div id="TableCell"><p>Winter 2017</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Updated</h3></div>
+						<div id="TableCell"><p>Summer 2018</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Summary</h3></div>
+						<div id="TableCell"><p>Crowd-sourced restroom locator</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Google Play</h3></div>
+						<div id="TableCell"><a href="https://play.google.com/store/apps/details?id=com.happybananastudio.loolookout">Available Here</a></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Github Repository</h3></div>
+						<div id="TableCell"><a href="https://github.com/mgintjee/loolookout">Available Here</a></div>
+					</div>
+				</div>
+			</div>
+			<h2>Amazon Review Predictor</h2>
+			<div id="Table">
+				<div id="TableBody">
+					<div id="TableRow">
+						<div id="TableHead"><h3>Platform</h3></div>
+						<div id="TableCell"><p>Website</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Language</h3></div>
+						<div id="TableCell"><p>Python</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Released</h3></div>
+						<div id="TableCell"><p>Winter 2017</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Updated</h3></div>
+						<div id="TableCell"><p>Spring 2017</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Summary</h3></div>
+						<div id="TableCell"><p>Predicts amazon reviews and stuff</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Working Website</h3></div>
+						<div id="TableCell"><a href="https://amazonpredictor.herokuapp.com/">Available Here</a></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Github Repository</h3></div>
+						<div id="TableCell"><a href="https://github.com/Krazete/cs175-amazon-project">Available Here</a></div>
+					</div>
+				</div>
+			</div>
+			<h2>Gravity Toss</h2>
+			<div id="Table">
+				<div id="TableBody">
+					<div id="TableRow">
+						<div id="TableHead"><h3>Platform</h3></div>
+						<div id="TableCell"><p>Android</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Language</h3></div>
+						<div id="TableCell"><p>C#</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Released</h3></div>
+						<div id="TableCell"><p>Summer 2017</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Updated</h3></div>
+						<div id="TableCell"><p>Summer 2018</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Summary</h3></div>
+						<div id="TableCell"><p>Pong that is kinda about gravity</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Google Play</h3></div>
+						<div id="TableCell"><a href="https://play.google.com/store/apps/details?id=com.happybananastudio.GravityToss">Available Here</a></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Github Repository</h3></div>
+						<div id="TableCell"><a href="https://github.com/mgintjee/Gravity-Toss">Available Here</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="ContentSkills">
+			<h1 id="HeaderSkills">Skills</h1>
+			<div>
+			</div>
+		</section>
+
+		<section id="ContentContact">
+			<h1 id="HeaderContact">Contact</h1>
+			<div id="Table">
+				<div id="TableBody">
+					<div id="TableRow">
+						<div id="TableHead"><h3>Email</h3></div>
+						<div id="TableCell"><p>mgintjee@gmail.com</p></div>
+					</div>
+					<div id="TableRow">
+						<div id="TableHead"><h3>Social</h3></div>
+						<div id="TableCell"><a href="github.com/mgintjee">Github</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="Assets/JS/SmoothScrolling.js"></script>
 	<script src="Assets/JS/SideMenu.js"></script>
-</html>
+	<script src="Assets/JS/ScrollingHighlight.js"></script>
+	</html>
