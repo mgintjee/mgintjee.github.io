@@ -24,8 +24,10 @@ function HandleHeaderInView(){
       }
     }
   }
-  UpdateSideBar(CurrentHeader);
-  PreviousHeader = CurrentHeader;
+  if(PreviousHeader != CurrentHeader){
+    UpdateSideBar(CurrentHeader);
+    PreviousHeader = CurrentHeader;
+  }
 }
 
 function UpdateSideBar(index){
