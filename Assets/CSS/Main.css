@@ -33,7 +33,7 @@
 .TableFoot { display: table-footer-group;}
 .TableCell, .TableHead, .TableBar { 
 	display: table-cell;
-	border: .25vh solid transparent;
+	border: .15vh solid transparent;
 	vertical-align: middle;
 	text-align: left;
 }
@@ -43,54 +43,36 @@
 /***********************
 * Progress Bar As Divs *
 ***********************/
-.ProgressBar {
+.ProgressBarOverall,
+.ProgressBarLanguage {
 	background-image: linear-gradient(to left, var(--BlueLight), var(--BlueDark));
 	vertical-align: middle;
 }
-	.ProgressBar > div {
-		background-color: var(--GrayLight);
+	.ProgressBarOverall > div,
+	.ProgressBarLanguage > div {
+		background-image: linear-gradient(to left, var(--GrayLight), var(--GrayDark));
 	}
 
-#OverallProgressFrontEnd, 
-#OverallProgressBackEnd{
+.ProgressBarOverall{
 	width: 35vw;
-	border-radius: 2vh;
-	padding: .5vh;
+	border-radius: 5vh;
+	padding: .7vh;
 }
-	#OverallProgressFrontEnd > div,
-	#OverallProgressBackEnd > div{
+	.ProgressBarOverall > div{
 		height: 3vh;
 		border-radius: 3vh;
 		width: 0vw; 
 	}
 
-#LanguageProgressCSS,
-#LanguageProgressHTML,
-#LanguageProgressJavaScript,
-#LanguageProgressJQuery,
-#LanguageProgressJava,
-#LanguageProgressPython,
-#LanguageProgressMySQL,
-#LanguageProgressCsharp,
-#LanguageProgressCplusplus,
-#LanguageProgressC{
+.ProgressBarLanguage{
 	width: 25vw;
-	border-radius: 1.5vh;
+	border-radius: 5vh;
 	padding: .5vh;
 }
-	#LanguageProgressCSS > div,
-	#LanguageProgressHTML > div,
-	#LanguageProgressJavaScript > div,
-	#LanguageProgressJQuery > div,
-	#LanguageProgressJava > div,
-	#LanguageProgressPython > div,
-	#LanguageProgressMySQL > div,
-	#LanguageProgressCsharp > div,
-	#LanguageProgressCplusplus > div,
-	#LanguageProgressC > div{
+	.ProgressBarLanguage > div{
 		height: 2vh;
 		width: 0vw; 
-		border-radius: 2vh;
+		border-radius: 3vh;
 	}
 
 /***************
@@ -301,10 +283,10 @@
 		width: 52.5vw;
 	}
 		#ContentSkills > .Table > .TableBody > .TableRow > .TableHead{
-			width: 7.5vw;
+			width: 6vw;
 		}
 		#ContentSkills > .Table > .TableBody > .TableRow > .TableCell{
-			width: 2.5vw;
+			width: 4vw;
 		}
 		#ContentSkills > .Table > .TableBody > .TableRow > .TableBar{
 			width: 45vw;
