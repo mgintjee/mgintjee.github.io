@@ -27,7 +27,12 @@
 * Table Format As Divs *
 ***********************/
 .Table { display: table; }
-.TableRow { display: table-row; }
+.TableRow {
+	display: table-row;
+	background-image: linear-gradient(to left, var(--GrayDark), white);
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%; 
+}
 .TableHeading { display: table-header-group; }
 .TableBody { display: table-row-group; }
 .TableFoot { display: table-footer-group;}
@@ -46,11 +51,15 @@
 .ProgressBarOverall,
 .ProgressBarLanguage {
 	background-image: linear-gradient(to left, var(--BlueLight), var(--BlueDark));
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%; 
 	vertical-align: middle;
 }
 	.ProgressBarOverall > div,
 	.ProgressBarLanguage > div {
 		background-image: linear-gradient(to left, var(--GrayLight), var(--GrayDark));
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%; 
 	}
 
 .ProgressBarOverall{
