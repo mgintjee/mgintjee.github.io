@@ -27,14 +27,50 @@
 * Table Format As Divs *
 ***********************/
 .Table { display: table; }
-.TableRow {
-	display: table-row;
-}
+.TableRow { display: table-row; }
 .TableHeading { display: table-header-group; }
 .TableBody { display: table-row-group; }
-.TableFoot { display: table-footer-group;}
+.TableFoot { display: table-footer-group; }
 .TableCell, .TableHead, .TableBar { display: table-cell; }
 
+/***********************
+* Progress Bar As Divs *
+***********************/
+.ProgressBarOverall,
+.ProgressBarLanguage {
+	background-image: linear-gradient(to left, var(--BlueLight), var(--BlueDark));
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%; 
+	vertical-align: middle;
+}
+	.ProgressBarOverall > div,
+	.ProgressBarLanguage > div {
+		background-image: linear-gradient(to left, var(--GrayLight), var(--GrayDark));
+		background-repeat: 	no-repeat;	
+		background-size: 100% 100%; 
+	}
+
+.ProgressBarOverall{
+	width: 35vw;
+	border-radius: 5vh;
+	padding: .7vh;
+}
+	.ProgressBarOverall > div{
+		height: 3vh;
+		border-radius: 3vh;
+		width: 0vw; 
+	}
+
+.ProgressBarLanguage{
+	width: 25vw;
+	border-radius: 5vh;
+	padding: .5vh;
+}
+	.ProgressBarLanguage > div{
+		height: 2vh;
+		width: 0vw; 
+		border-radius: 3vh;
+	}
 
 /*****************
 * Wrapper Header *
@@ -163,10 +199,94 @@
 	flex-direction: column;
 }
 
+/**********************
+* Content Backgrounds *
+**********************/
+.Content{
+	min-height: 90vh;
+	width: 70vw;
+	padding-top: 15vh;
+	display: block;
+}
+	/***************
+	* Content Tags *
+	***************/
+
+	/* h1 Tag */
+	.Content h1{
+		color: black;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 2em;
+		font-weight: bold;
+		width: 70vw;
+		text-transform: uppercase;
+		text-align: center;
+
+		background-image: linear-gradient(to left, var(--GrayLight), var(--BlueLight), var(--GrayLight));
+		background-repeat: 	no-repeat;	
+		background-size: 100% 100%;
+		border-bottom-style: solid;
+		border-width: thin;
+	}
+	/* h2 Tag */
+	.Content h2{
+		color: black;
+		text-decoration: none;
+		margin-left: 2.5vw;
+		margin-top: 1vh;
+		padding-left: 1vw;
+		display: block;
+		font-size: 1.25em;
+		font-weight: bold;
+		width: 56.5vw;
+		letter-spacing: 0.05em;
+		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayLight));
+		background-repeat: 	no-repeat;	
+		background-size: 100% 100%;
+		border-left-style: double;
+		border-width: thick;
+	}
+
+	/* h3 Tag */
+	.Content h3{
+		color: black;
+		text-decoration: none;
+		display: block;
+		font-size: 1em;
+		font-weight: bold;
+		text-align: left;
+		border-left-style: solid;
+		border-width: thin;
+		padding-left: 1vw; 
+	}
+
+	/* h4 Tag */
+	.Content h4{
+		color: black;
+		text-decoration: none;
+		display: block;
+		font-size: 1em;
+		text-align: left;
+		border-left-style: solid;
+		border-width: thin;
+		padding-left: 1vw; 
+	}
+
+	/* Content p Tag */
+	.Content p{
+		padding-left: 1vw;
+	}
+
+	/* Content a Tag */
+	.Content a{
+		padding-left: 1vw;
+	}
+
 /*********
 * Spacer *
 *********/
-#Spacer{
+#WrapperMain > #Spacer{
 	/* Dimensions */
 	height: 90vh;
 	width: 100vw;
@@ -183,7 +303,7 @@
 /******************
 * Wrapper Content *
 ******************/
-#WrapperContent{
+#WrapperMain > #WrapperContent{
 	/* Dimensions */
 	width: 70vw;
 
@@ -201,254 +321,70 @@
 	/* Position/Attributes */
 	/* Aesthetics */
 
+#ContentEducation > .Table {
 
+	/* Dimensions */
+	width: 55vw;
+	
+	/* Position/Attributes */
+	margin: 0 0 0 5vw;
+}
 
+#ContentProjects > .Table {
 
-/***********************
-* Progress Bar As Divs *
-***********************/
-.ProgressBarOverall,
-.ProgressBarLanguage {
-	background-image: linear-gradient(to left, var(--BlueLight), var(--BlueDark));
-	background-repeat: 	no-repeat;	
-	background-size: 100% 100%; 
+	/* Dimensions */
+	width: 55vw;
+
+	/* Position/Attributes */
+	margin: 0 0 0 5vw;
+}
+
+#ContentSkills > #OverallSkill {
+
+	/* Dimensions */
+	width: 55vw;
+
+	/* Position/Attributes */
+	margin: 0 0 0 5vw;
+}
+
+#ContentSkills > #LanguageSkill {
+
+	/* Dimensions */
+	width: 52.5vw;
+
+	/* Position/Attributes */
+	margin: 0 0 0 7.5vw;
+}
+
+#ContentSkills > .Table > .TableBody > .TableRow > .TableHead{
+
+	/* Dimensions */
+	width: 10vw;
+
+	/* Position/Attributes */
 	vertical-align: middle;
 }
-.ProgressBarOverall > div,
-.ProgressBarLanguage > div {
-	background-image: linear-gradient(to left, var(--GrayLight), var(--GrayDark));
-	background-repeat: 	no-repeat;	
-	background-size: 100% 100%; 
-}
 
-.ProgressBarOverall{
-	width: 35vw;
-	border-radius: 5vh;
-	padding: .7vh;
-}
-.ProgressBarOverall > div{
-	height: 3vh;
-	border-radius: 3vh;
-	width: 0vw; 
-}
-
-.ProgressBarLanguage{
-	width: 25vw;
-	border-radius: 5vh;
-	padding: .5vh;
-}
-.ProgressBarLanguage > div{
-	height: 2vh;
-	width: 0vw; 
-	border-radius: 3vh;
-}
-
-/***************
-* Side Wrapper *
-***************/
-#SideWrapper {
-	height: 5vh;
-	width: 70vw;
-	position: fixed;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: row;
-	background-image: linear-gradient(to top, var(--BlueLight), var(--BlueDark));
-	background-repeat: 	no-repeat;	
-	background-size: 100% 100%;
-	border-right-style: solid;
-	border-width: thin;
-	align-content: center;
-	padding-left: 15vw;
-	padding-right: 15vw; 
-}
-
-/**************************
-* Side Wrapper Navigation *
-**************************/
-
-/*****************************************
-* Side Wrapper Navigation Unordered List *
-*****************************************/
-#SideWrapper > #SideNavigation {
-	text-align: justify;
-}
-#SideWrapper > #SideNavigation:after {
-	text-align: justify;
-}
-
-/************************************
-* Side Wrapper Navigation HyperLink *
-************************************/
-#SideWrapper > #SideNavigation a {
-	color: black;
-	text-decoration: none;
-	font-weight: bold;
-	position: relative;
-	text-transform: uppercase;
-
-	background-image: linear-gradient(to top, var(--BlueLight), var(--BlueDark));
-	background-repeat: 	no-repeat;	
-	background-size: 100% 100%;
-}
-
-/***************
-* Main Wrapper *
-#MainWrapper{
-margin-top: 5vh;
-padding: 0 15vw 0 15vw;
-background-image: linear-gradient(to right, var(--BlueLight), var(--GrayLight)15%, var(--GrayLight)85%, var(--BlueLight));
-}
-***************/
-
-/**********************
-* Content Backgrounds *
-**********************/
-.Content{
-	min-height: 90vh;
-	width: 70vw;
-	padding-top: 15vh;
-	display: block;
-}
-
-/***************
-* Content Tags *
-***************/
-
-/* h1 Tag */
-.Content h1{
-	color: black;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 2em;
-	font-weight: bold;
-	width: 70vw;
-	text-transform: uppercase;
-	text-align: center;
-
-	background-image: linear-gradient(to top, var(--BlueLight), var(--GrayLight));
-	background-repeat: 	no-repeat;	
-	background-size: 100% 100%;
-	border-bottom-style: solid;
-	border-width: thin;
-}
-/* h2 Tag */
-.Content h2{
-	color: black;
-	text-decoration: none;
-	margin-left: 2.5vw;
-	margin-top: 1vh;
-	padding-left: 1vw;
-	display: block;
-	font-size: 1.25em;
-	font-weight: bold;
-	width: 56.5vw;
-	letter-spacing: 0.05em;
-	background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
-	background-repeat: 	no-repeat;	
-	background-size: 100% 100%;
-	border-left-style: double;
-	border-width: thick;
-}
-
-/* h3 Tag */
-.Content h3{
-	color: black;
-	text-decoration: none;
-	display: block;
-	font-size: 1em;
-	font-weight: bold;
-	text-align: left;
-	border-left-style: solid;
-	border-width: thin;
-	padding-left: 1vw; 
-}
-
-/* h4 Tag */
-.Content h4{
-	color: black;
-	text-decoration: none;
-	display: block;
-	font-size: 1em;
-	text-align: left;
-	border-left-style: solid;
-	border-width: thin;
-	padding-left: 1vw; 
-}
-
-/* Content p Tag */
-.Content p{
-	padding-left: 1vw;
-}
-
-/* Content a Tag */
-.Content a{
-	padding-left: 1vw;
-}
-
-/******************
-* Content Welcome *
-******************/
-#ContentWelcome {
-}
-
-/*******************
-* Content About Me *
-*******************/
-#ContentAbout img{
-	width: 	15vw;
-	border-radius: 	17.5vw;
-}
-
-/*********************
-* Content Eductation *
-*********************/
-#ContentEducation {
-}
-#ContentEducation > .Table {
-	margin: 0 0 0 5vw;
-	width: 55vw;
-}
-
-/*******************
-* Content Projects *
-*******************/
-#ContentProjects{
-}
-#ContentProjects > .Table {
-	margin: 0 0 0 5vw;
-	width: 55vw;
-}
-
-/*****************
-* Content Skills *
-*****************/
-#ContentSkills{
-}
-#ContentSkills > #OverallSkill {
-	margin: 0 0 0 5vw;
-	width: 55vw;
-}
-#ContentSkills > #LanguageSkill {
-	margin: 0 0 0 7.5vw;
-	width: 52.5vw;
-}
-#ContentSkills > .Table > .TableBody > .TableRow > .TableHead{
-	width: 10vw;
-}
 #ContentSkills > .Table > .TableBody > .TableRow > .TableCell{
+
+	/* Dimensions */
 	width: 5vw;
+
+	/* Position/Attributes */
+	vertical-align: middle;
 }
+
 #ContentSkills > .Table > .TableBody > .TableRow > .TableBar{
+
+	/* Dimensions */
 	width: 40vw;
+
+	/* Position/Attributes */
+	vertical-align: middle;
 }
-/*********************
-* Content Contact Me *
-*********************/
-#ContentContact{
-}
+
 #ContentContact > .Table {
+	/* Position/Attributes */
 	margin: 0 0 0 2.5vw;
 }
