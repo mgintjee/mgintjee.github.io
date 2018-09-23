@@ -34,10 +34,10 @@ function UpdateSideBar(index){
   for(i=0; i < HeadersLength; ++i ){
     var Sidebar = document.getElementById(Sidebars[i]);
     if(i != index ){
-      Sidebar.setAttribute("style","background: var(--BlueLight);");
+      Sidebar.setAttribute("style","background-image: linear-gradient(to top, var(--BlueLight ), var(--BlueDark )); background-repeat:  no-repeat; background-size: 100% 100%;");
     }
     else{
-      Sidebar.setAttribute("style","background-image: linear-gradient(to right, var(--BlueLight   ), var(--GrayDark )); background-repeat:  no-repeat; background-size: 100% 100%;");
+      Sidebar.setAttribute("style","background-image: linear-gradient(to top, var(--BlueLight ), var(--GrayDark )); background-repeat:  no-repeat; background-size: 100% 100%;");
     }
   }
 }

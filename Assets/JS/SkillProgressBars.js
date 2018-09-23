@@ -1,14 +1,14 @@
 var FrontEndSkills = [
-		["LanguageProgressCSS", 5.5],
+		["LanguageProgressCSS", 6],
 		["LanguageProgressHTML", 5.0],
-		["LanguageProgressJavaScript", 4.5],
-		["LanguageProgressJQuery", 3.0]
+		["LanguageProgressJavaScript", 6.5],
+		["LanguageProgressJQuery", 2.5]
 	],
 	BackEndSkills = [
 		["LanguageProgressJava", 8.0],
 		["LanguageProgressPython", 8.5],
 		["LanguageProgressMySQL", 6.5],
-		["LanguageProgressCsharp", 6.0],
+		["LanguageProgressCsharp", 6.5],
 		["LanguageProgressCplusplus", 5.0],
 		["LanguageProgressC", 4.5]
 	]
