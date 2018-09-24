@@ -414,7 +414,7 @@
 
 .ProgressBarOverall{
 	/* Dimensions */
-	width: 45vw;
+	width: 40vw;
 
 	/* Position/Attributes */
 	border-radius: 5vh;
@@ -431,7 +431,7 @@
 
 .ProgressBarLanguage{
 	/* Dimensions */
-	width: 35vw;
+	width: 30vw;
 
 	/* Position/Attributes */
 	border-radius: 5vh;
