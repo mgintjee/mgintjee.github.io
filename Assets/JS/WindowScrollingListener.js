@@ -12,7 +12,6 @@ HandleHeaderInView();
 // On Scroll Listener
 window.onscroll = function(){
   HandleHeaderCompression();
-  console.log (BelowTopOfScreen);
   if(BelowTopOfScreen){
     HandleHeaderInView();
   }
@@ -24,7 +23,6 @@ function HandleHeaderInView(){
   for(i=0; i<HeadersLength; i++) {
     var Header = document.getElementById(Headers[i]);
     if (isElementInViewport(Header)){
-      console.log(PreviousHeader, CurrentHeader, i);
       if(PreviousHeader != i){
         CurrentHeader = i;
       }
