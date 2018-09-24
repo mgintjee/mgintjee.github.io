@@ -35,17 +35,15 @@
 
 			</div>
 
-			<div class="Table">
-				<div class="TableBody">
-					<div class="TableRow">
-						<div class="TableCell"><a id="NavAbout"     href="#ContentAbout"    >About</a></div>
-						<div class="TableCell"><a id="NavEducation" href="#ContentEducation">Education</a></div>
-						<div class="TableCell"><a id="NavProjects"  href="#ContentProjects" >Projects</a></div>
-						<div class="TableCell"><a id="NavSkills"    href="#ContentSkills"   >Skills</a></div>
-						<div class="TableCell"><a id="NavContact"   href="#ContentContact"  >Contact</a></div>
-					</div>
-				</div>
-			</div>
+			<nav>
+				<ul>
+					<li><a id="NavAbout"     href="#ContentAbout"    >About</a></li>
+					<li><a id="NavEducation" href="#ContentEducation">Education</a></li>
+					<li><a id="NavProjects"  href="#ContentProjects" >Projects</a></li>
+					<li><a id="NavSkills"    href="#ContentSkills"   >Skills</a></li>
+					<li><a id="NavContact"   href="#ContentContact"  >Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 
 		<div id="WrapperMain">
@@ -131,6 +129,12 @@
 					<div class="Table">
 						<div class="TableBody">
 							<div class="TableRow">
+								<div class="TableHead"><h3>Icon</h3></div>
+								<div class="TableCell">
+									<img id="ImageProfile" src="Assets/Media/Images/Icon_AbxSpectrum.png" alt="ABX Spectrum Icon">
+								</div>
+							</div>
+							<div class="TableRow">
 								<div class="TableHead"><h3>Platform</h3></div>
 								<div class="TableCell"><p>Android</p></div>
 							</div>
@@ -168,6 +172,12 @@
 					<h2>Zap-Card</h2>
 					<div class="Table">
 						<div class="TableBody">
+							<div class="TableRow">
+								<div class="TableHead"><h3>Icon</h3></div>
+								<div class="TableCell">
+									<img id="ImageProfile" src="Assets/Media/Images/Icon_ZapCard.png" alt="Zap-Card Icon">
+								</div>
+							</div>
 							<div class="TableRow">
 								<div class="TableHead"><h3>Platform</h3></div>
 								<div class="TableCell"><p>Android</p></div>
@@ -207,6 +217,12 @@
 					<p></p>
 					<div class="Table">
 						<div class="TableBody">
+							<div class="TableRow">
+								<div class="TableHead"><h3>Icon</h3></div>
+								<div class="TableCell">
+									<img id="ImageProfile" src="Assets/Media/Images/Icon_LooLookOut.png" alt="LooLook-Out Icon">
+								</div>
+							</div>
 							<div class="TableRow">
 								<div class="TableHead"><h3>Platform</h3></div>
 								<div class="TableCell"><p>Android</p></div>
@@ -284,6 +300,12 @@
 					<div class="Table">
 						<div class="TableBody">
 							<div class="TableRow">
+								<div class="TableHead"><h3>Icon</h3></div>
+								<div class="TableCell">
+									<img id="ImageProfile" src="Assets/Media/Images/Icon_GravityToss.png" alt="Gravity Toss Icon">
+								</div>
+							</div>
+							<div class="TableRow">
 								<div class="TableHead"><h3>Platform</h3></div>
 								<div class="TableCell"><p>Android</p></div>
 							</div>
@@ -333,7 +355,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="Table" id="LanguageSkill">
 						<div class="TableBody">
 							<div class="TableRow">
@@ -427,9 +449,7 @@
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="Assets/JS/TopWrapperCompression.js"></script>
-<!--<script src="Assets/JS/SmoothScrolling.js"></script>-->
-<script src="Assets/JS/SideMenu.js"></script>
-<script src="Assets/JS/ScrollingHighlight.js"></script>
+<script src="Assets/JS/WindowScrollingListener.js"></script>
+<script src="Assets/JS/NavMenuSelectClass.js"></script>
 <script src="Assets/JS/SkillProgressBars.js"></script>
 </html>
