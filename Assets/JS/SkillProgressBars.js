@@ -1,7 +1,7 @@
 var FrontEndSkills = [
 ["LanguageProgressCSS",        6.0],
 ["LanguageProgressHTML",       5.0],
-["LanguageProgressJavaScript", 6.5],
+["LanguageProgressJavaScript", 7.5],
 ["LanguageProgressJQuery",     2.5]
 ],
 BackEndSkills = [

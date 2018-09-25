@@ -69,6 +69,36 @@
 		background-size: 100% 100%; 
 	}
 
+/*
+* Arrows *
+*/
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 /*****************
 * Wrapper Header *
 *****************/
@@ -176,6 +206,7 @@
     	vertical-align: middle;
 
 		/* Aesthetics */
+		text-decoration: none;
 		color: black;
     	border-right-style: solid;
 		border-left-style: solid;
@@ -183,11 +214,7 @@
 		background-image: linear-gradient(to bottom, var(--RedLight), var(--RedDark));
 	}
 
-	#WrapperHeader nav ul li a:hover{
-		/* Aesthetics */
-		background-image: linear-gradient(to bottom, var(--RedLight), var(--GrayDark));
-	}
-
+	#WrapperHeader nav ul li a:hover,
 	#WrapperHeader nav ul li a.selected{
 		/* Aesthetics */
 		color: var(--GrayLight);
@@ -314,6 +341,7 @@
 		/* Position/Attributes */
 		/* Aesthetics */
 		padding-left: 1vw;
+		text-decoration: none;
 	}
 
 /*********
