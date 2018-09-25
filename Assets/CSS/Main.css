@@ -32,7 +32,14 @@
 	border-collapse:separate; 
 	border-spacing: 0.5vh;
 }
-.TableRow { display: table-row; }
+.TableRow { 
+	display: table-row; 
+
+	/* Aesthetics */
+	background-image: linear-gradient(to right, var(--GrayDark), var(--GrayLight));
+	background-repeat: 	no-repeat;	
+	background-size: 100% 100%; 
+}
 .TableHeading { display: table-header-group; }
 .TableBody { display: table-row-group; }
 .TableFoot { display: table-footer-group; }
@@ -129,6 +136,8 @@
 
 		/* Aesthetics */
 		border-radius: 	10vw;
+		border-style: solid;
+		border-width: thick;
 	}
 
 	/* Wrapper Header Table */
@@ -350,6 +359,8 @@
 
 		/* Aesthetics */
 		border-radius: 	2.5vw;
+		border-style: solid;
+		border-width: thick;
 	}
 
 #ContentEducation > .Table,
