@@ -25,7 +25,7 @@ for(i=0; i<FrontEndLength;++i){
 	var ProgressBar = document.getElementById(ID);
 	var SkillID = ID+"P";
 	var SkillP = document.getElementById(SkillID);
-	SkillP.innerHTML = Value;
+	SkillP.innerHTML = Value + " / 10";
 	ProgressBar.setAttribute("style", "width:" + Percentage + "vw;");
 	FrontEndOverall += Value;
 }
@@ -44,7 +44,7 @@ for(i=0; i<BackEndLength;++i){
 	var ProgressBar = document.getElementById(ID);
 	var SkillID = ID+"P";
 	var SkillP = document.getElementById(SkillID);
-	SkillP.innerHTML = Value;
+	SkillP.innerHTML = Value + " / 10";
 	ProgressBar.setAttribute("style", "width:" + Percentage + "vw;");
 	BackEndOverall += Value;
 }
