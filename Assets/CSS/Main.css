@@ -14,6 +14,7 @@
 	--GrayLight: #E5E5E5;
 	--GrayDark: #CCCCCC;
 }
+
 /******************
 * Universal Reset *
 ******************/
@@ -27,12 +28,14 @@
 * Table Format As Divs *
 ***********************/
 .Table { 
+	/* Position/Attributes */
 	display: table; 
 	table-layout: fixed;
 	border-collapse:separate; 
-	border-spacing: 0.5vh;
+	border-spacing: 0.5vmin;
 }
 .TableRow { 
+	/* Position/Attributes */
 	display: table-row; 
 
 	/* Aesthetics */
@@ -43,9 +46,9 @@
 .TableHeading { display: table-header-group; }
 .TableBody { display: table-row-group; }
 .TableFoot { display: table-footer-group; }
-.TableCell, .TableHead, .TableBar { 
-	display: table-cell;
-	vertical-align: middle; 
+.TableCell, .TableHead, .TableImg, .TableBar {
+	display: table-cell; 
+	vertical-align: top;
 }
 
 /***********************
@@ -54,7 +57,6 @@
 .ProgressBarOverall,
 .ProgressBarLanguage {
 	/* Position/Attributes */
-	vertical-align: middle;
 
 	/* Aesthetics */
 	background-image: linear-gradient(to left, var(--BlueLight), var(--BlueDark));
@@ -69,35 +71,97 @@
 		background-size: 100% 100%; 
 	}
 
-/*
+/*********
 * Arrows *
-*/
+*********/
 i {
-    border: solid black;
-    border-width: 0 3px 3px 0;
+	/* Position/Attributes */
+	border: solid black;
     display: inline-block;
-    padding: 3px;
+
+	/* Aesthetics */
+	vertical-align: middle;
 }
 
 .right {
+	/* Aesthetics */
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
 .left {
+	/* Aesthetics */
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
 
 .up {
+	/* Aesthetics */
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
 
 .down {
+	/* Aesthetics */
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+.H3{
+    padding: .2em;
+    border-width: 0 .2em .2em 0;
+}
+
+.P{
+    padding: .15em;
+    border-width: 0 .15em .15em 0;
+}
+
+/************
+* Text Tags *
+************/
+
+	/* General Text Tags Font */
+	h1, h2, h3, h4, p, a{
+
+		/* Position/Attributes */
+		text-align: left;
+		display: block;
+
+		/* Aesthetics */
+		font-family: "Courier New", Courier, monospace;
+	}
+
+	/* General h1 Tag */
+	h1{
+		/* Aesthetics */
+		font-size: 2em;
+		text-decoration: none; 
+	}
+	/* General h2 Tag */
+	h2{
+		/* Aesthetics */
+		font-size: 1.5em;
+		text-decoration: none; 
+	}
+	/* General h3 Tag */
+	h3{
+		/* Aesthetics */
+		font-size: 1.25em;
+		text-decoration: none; 
+	}
+	/* General h4 Tag */
+	h4{
+		/* Aesthetics */
+		font-size: 1em;
+		text-decoration: none; 
+	}
+	/* General p, a Tag */
+	p, a{
+		/* Aesthetics */
+		font-size: 1em;
+		text-decoration: none; 
+	}
 
 /*****************
 * Wrapper Header *
@@ -119,6 +183,7 @@ i {
 	background-image: linear-gradient(to bottom, var(--RedLight) 45%, var(--RedDark));
 	transition: 0.5s; 
 }
+
 	/* Wrapper Header Table */
 	#WrapperHeader > #HeaderContainer{
 		/* Dimensions */
@@ -155,9 +220,10 @@ i {
 		margin: auto;
 	}
 
-	/* Container For Welcome Image */
+	/* Welcome Image */
 	#WrapperHeader > #HeaderContainer > #ContainerImage img{
 		/* Dimensions */
+		height: 55vh;
 		width: 	25vw;
 
 		/* Position/Attributes */
@@ -214,12 +280,6 @@ i {
 		background-image: linear-gradient(to bottom, var(--RedLight), var(--RedDark));
 	}
 
-	#WrapperHeader nav ul li a:hover,
-	#WrapperHeader nav ul li a.selected{
-		/* Aesthetics */
-		color: var(--GrayLight);
-	}
-
 /***************
 * Wrapper Main *
 ***************/
@@ -235,114 +295,75 @@ i {
 * Content Backgrounds *
 **********************/
 .Content{
-
-		/* Dimensions */
-		/* Position/Attributes */
-		/* Aesthetics */
+	/* Dimensions */
 	min-height: 90vh;
 	width: 70vw;
+
+	/* Position/Attributes */
 	padding-top: 15vh;
 	display: block;
 }
-	/***************
-	* Content Tags *
-	***************/
+	/********************
+	* Content Text Tags *
+	********************/
+	.Content h2,
+	.Content h3,
+	.Content h4,
+	.Content p,
+	.Content a{
+		padding-left: 1vw;
+	}
+
+	.Content h1,
+	.Content h2,
+	.Content h3,
+	.Content h4{
+		font-weight: bold;
+	}
 
 	/* h1 Tag */
 	.Content h1{
-
 		/* Dimensions */
-		/* Position/Attributes */
-		/* Aesthetics */
-		color: black;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 2em;
-		font-weight: bold;
 		width: 70vw;
+
+		/* Aesthetics */
 		text-transform: uppercase;
 		text-align: center;
 
 		background-image: linear-gradient(to left, var(--GrayLight), var(--BlueLight), var(--GrayLight));
 		background-repeat: 	no-repeat;	
 		background-size: 100% 100%;
+
 		border-bottom-style: solid;
 		border-width: thin;
 	}
+
 	/* h2 Tag */
 	.Content h2{
-
 		/* Dimensions */
+		width: 63.5vw;
+
 		/* Position/Attributes */
-		/* Aesthetics */
-		color: black;
-		text-decoration: none;
 		margin-left: 2.5vw;
 		margin-top: 1vh;
-		padding-left: 1vw;
-		display: block;
-		font-size: 1.25em;
-		font-weight: bold;
-		width: 63.5vw;
-		letter-spacing: 0.05em;
+
+		/* Aesthetics */
 		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayLight));
 		background-repeat: 	no-repeat;	
 		background-size: 100% 100%;
+
 		border-left-style: double;
 		border-width: thick;
 	}
 
-	/* h3 Tag */
-	.Content h3{
-
-		/* Dimensions */
-		/* Position/Attributes */
-		/* Aesthetics */
-		color: black;
-		text-decoration: none;
-		display: block;
-		font-size: 1em;
-		font-weight: bold;
-		text-align: left;
-		border-left-style: solid;
-		border-width: thin;
-		padding-left: 1vw; 
-	}
-
-	/* h4 Tag */
+	/* h3, h4 Tag */
+	.Content h3,
 	.Content h4{
-
-		/* Dimensions */
-		/* Position/Attributes */
 		/* Aesthetics */
-		color: black;
-		text-decoration: none;
-		display: block;
-		font-size: 1em;
-		text-align: left;
 		border-left-style: solid;
 		border-width: thin;
-		padding-left: 1vw; 
 	}
 
-	/* Content p Tag */
-	.Content p{
-
-		/* Dimensions */
-		/* Position/Attributes */
-		/* Aesthetics */
-		padding-left: 1vw;
-	}
-
-	/* Content a Tag */
-	.Content a{
-
-		/* Dimensions */
-		/* Position/Attributes */
-		/* Aesthetics */
-		padding-left: 1vw;
-		text-decoration: none;
-	}
 
 /*********
 * Spacer *
@@ -377,115 +398,121 @@ i {
 	background-image: linear-gradient(to right, var(--BlueDark), var(--GrayLight) 15%, var(--GrayLight) 85%, var(--BlueDark));
 	transition: 0.5s;
 }
-	/* Container For Welcome Image */
+	/* Seal/Icon Images */
 	#WrapperMain img{
 		/* Dimensions */
 		width: 	10vmin;
 
 		/* Position/Attributes */
 	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
 
 		/* Aesthetics */
 		border-radius: 	2.5vw;
 		border-style: solid;
-		border-width: thick;
+		border-width: thin;
 	}
+	/* Content General Tables */
+	#ContentContact > .Table {
+		/* Position/Attributes */
+		margin: 0 2.5vw;
+	}
+	#ContentEducation > .Table,
+	#ContentProjects > .Table {
 
-#ContentEducation > .Table,
-#ContentProjects > .Table {
-
-	/* Dimensions */
-	width: 60vw;
-	
-	/* Position/Attributes */
-	margin: 0 5vw;
-}
-
-#ContentSkills > #OverallSkill {
-
-	/* Dimensions */
-	width: 60vw;
-
-	/* Position/Attributes */
-	margin: 0 5vw;
-}
-
-#ContentSkills > #OverallSkill > .TableBody > .TableRow > .TableHead {
-
-	/* Dimensions */
-	width: 10vw;
-}
-#ContentSkills > #OverallSkill > .TableBody > .TableRow > .TableCell {
-
-	/* Dimensions */
-	width: 5vw;
-}
-#ContentSkills > #OverallSkill > .TableBody > .TableRow > .TableBar {
-
-	/* Dimensions */
-	width: 45vw;
-}
-
-#ContentSkills > #LanguageSkill {
-
-	/* Dimensions */
-	width: 50vw;
-
-	/* Position/Attributes */
-	margin: 0 10vw;
-}
-
-#ContentSkills > #LanguageSkill > .TableBody > .TableRow > .TableHead {
-
-	/* Dimensions */
-	width: 10vw;
-}
-#ContentSkills > #LanguageSkill > .TableBody > .TableRow > .TableCell {
-
-	/* Dimensions */
-	width: 5vw;
-}
-#ContentSkills > #LanguageSkill > .TableBody > .TableRow > .TableBar {
-
-	/* Dimensions */
-	width: 35vw;
-}
-
-.ProgressBarOverall{
-	/* Dimensions */
-	width: 40vw;
-
-	/* Position/Attributes */
-	border-radius: 5vh;
-	padding: .7vh;
-}
-	.ProgressBarOverall > div{
 		/* Dimensions */
-		height: 3vh;
+		width: 60vw;
 		
 		/* Position/Attributes */
-		border-radius: 3vh;
-		width: 0vw; 
+		margin: 0 5vw;
 	}
 
-.ProgressBarLanguage{
-	/* Dimensions */
-	width: 30vw;
+	/* Content Overall Tables*/
+	#ContentSkills > #OverallSkill {
 
-	/* Position/Attributes */
-	border-radius: 5vh;
-	padding: .5vh;
-}
-	.ProgressBarLanguage > div{
 		/* Dimensions */
-		height: 2vh;
+		width: 60vw;
 
 		/* Position/Attributes */
-		width: 0vw; 
-		border-radius: 3vh;
+		margin: 0 5vw;
 	}
 
-#ContentContact > .Table {
-	/* Position/Attributes */
-	margin: 0 2.5vw;
-}
+		#ContentSkills > #OverallSkill > .TableBody > .TableRow > .TableHead {
+
+			/* Dimensions */
+			width: 10vw;
+		}
+		#ContentSkills > #OverallSkill > .TableBody > .TableRow > .TableCell {
+
+			/* Dimensions */
+			width: 5vw;
+		}
+		#ContentSkills > #OverallSkill > .TableBody > .TableRow > .TableBar {
+
+			/* Dimensions */
+			width: 45vw;
+		}
+
+	/* Content Language Tables*/
+	#ContentSkills > #LanguageSkill {
+
+		/* Dimensions */
+		width: 50vw;
+
+		/* Position/Attributes */
+		margin: 0 10vw;
+	}
+
+		#ContentSkills > #LanguageSkill > .TableBody > .TableRow > .TableHead {
+
+			/* Dimensions */
+			width: 10vw;
+		}
+		#ContentSkills > #LanguageSkill > .TableBody > .TableRow > .TableCell {
+
+			/* Dimensions */
+			width: 5vw;
+		}
+		#ContentSkills > #LanguageSkill > .TableBody > .TableRow > .TableBar {
+
+			/* Dimensions */
+			width: 35vw;
+		}
+
+	/* Content Overall Progress*/
+	.ProgressBarOverall{
+		/* Dimensions */
+		width: 40vw;
+
+		/* Position/Attributes */
+		border-radius: 5vh;
+		padding: .7vh;
+	}
+		.ProgressBarOverall > div{
+			/* Dimensions */
+			height: 3vh;
+			
+			/* Position/Attributes */
+			border-radius: 3vh;
+			width: 0vw; 
+		}
+
+
+	/* Content Language Progress*/
+	.ProgressBarLanguage{
+		/* Dimensions */
+		width: 30vw;
+
+		/* Position/Attributes */
+		border-radius: 5vh;
+		padding: .5vh;
+	}
+		.ProgressBarLanguage > div{
+			/* Dimensions */
+			height: 2vh;
+
+			/* Position/Attributes */
+			width: 0vw; 
+			border-radius: 3vh;
+		}
