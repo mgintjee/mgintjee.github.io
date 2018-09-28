@@ -159,9 +159,10 @@ i {
 		/* Aesthetics */
 		font-size: 1em; 
 	}
-	/* a Tag*/
-	a:hover{
-		color:var(--GrayLight);
+	/* a Tag hover */
+	a:hover,
+	a > h3:hover{
+		color:var(--PurpleLight);
 	}
 
 /*****************
@@ -285,6 +286,10 @@ i {
 		border-left-style: solid;
 		border-width: thin;
 		background-image: linear-gradient(to bottom, var(--RedLight), var(--RedDark));
+	}
+
+	#WrapperHeader nav ul li a:hover{
+		color: var(--GrayLight);
 	}
 
 /***************
