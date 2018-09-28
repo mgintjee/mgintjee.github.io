@@ -46,15 +46,9 @@
 .TableHeading { display: table-header-group; }
 .TableBody { display: table-row-group; }
 .TableFoot { display: table-footer-group; }
-.TableCell, .TableHead, .TableImg, .TableBar {
-	display: table-cell;
-}
-.TableCell{
-	align-content: center;
-}
-.TableHead, .TableImg, .TableBar{
-	align-content: top;
-}
+.TableCell, .TableHead, .TableImg, .TableBar { display: table-cell; }
+.TableCell{ vertical-align: middle; }
+.TableHead, .TableImg, .TableBar{ vertical-align: top; }
 
 /***********************
 * Progress Bar As Divs *
