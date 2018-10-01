@@ -39,9 +39,12 @@
 	display: table-row; 
 
 	/* Aesthetics */
+	background: var(--GrayLight);
+	/*
 	background-image: linear-gradient(to right, var(--GrayDark), var(--GrayLight));
 	background-repeat: 	no-repeat;	
 	background-size: 100% 100%; 
+	*/
 }
 .TableHeading { display: table-header-group; }
 .TableBody { display: table-row-group; }
@@ -58,16 +61,22 @@
 	/* Position/Attributes */
 
 	/* Aesthetics */
+		background: black;
+	/*
 	background-image: linear-gradient(to left, var(--BlueLight), var(--BlueDark));
 	background-repeat: 	no-repeat;	
 	background-size: 100% 100%; 
+	*/
 }
 	.ProgressBarOverall > div,
 	.ProgressBarLanguage > div {
 		/* Aesthetics */
+		background: var(--RedLight);
+		/*
 		background-image: linear-gradient(to left, var(--GrayLight), var(--GrayDark));
 		background-repeat: 	no-repeat;	
 		background-size: 100% 100%; 
+		*/
 	}
 
 /*********
@@ -176,7 +185,10 @@ i {
 	align-content: center;
 
 	/* Aesthetics */
+	/*
 	background-image: linear-gradient(to bottom, var(--RedLight) 45%, var(--RedDark));
+	*/
+	background: var(--RedLight);
 	transition: 0.25s; 
 }
 
@@ -193,7 +205,10 @@ i {
 		flex-direction: row;
 
 		/* Aesthetics */
+		/*
 		background-image: linear-gradient(to bottom, var(--RedLight), var(--GrayDark	));
+		*/
+		background: var(--GrayLight);
 		border-radius: 	5vw;
 		transition: 0.25s; 
 	} 
@@ -279,7 +294,10 @@ i {
     	border-right-style: solid;
 		border-left-style: solid;
 		border-width: thin;
+		/*
 		background-image: linear-gradient(to bottom, var(--RedLight), var(--RedDark));
+		*/
+		background: var(--BlueDark);
 	}
 
 	#WrapperHeader nav ul li a:hover{
@@ -336,7 +354,7 @@ i {
 		text-transform: uppercase;
 		text-align: center;
 
-		background-image: linear-gradient(to left, var(--GrayLight), var(--BlueLight), var(--GrayLight));
+		background-image: linear-gradient(to left, var(--GrayDark), var(--BlueLight), var(--GrayDark));
 		background-repeat: 	no-repeat;	
 		background-size: 100% 100%;
 
@@ -354,7 +372,7 @@ i {
 		margin-top: 1vh;
 
 		/* Aesthetics */
-		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayLight));
+		background-image: linear-gradient(to right, var(--BlueLight), var(--GrayDark));
 		background-repeat: 	no-repeat;	
 		background-size: 100% 100%;
 
@@ -384,7 +402,7 @@ i {
 	margin-top: 90vh;
 
 	/* Aesthetics */
-	background-image: linear-gradient(to bottom, var(--RedDark), var(--BlueLight));
+	background-image: linear-gradient(to bottom, var(--RedLight), var(--BlueLight));
 	transition: 0.25s;
 }
 
@@ -401,7 +419,7 @@ i {
 	padding-right: 15vw;
 
 	/* Aesthetics */
-	background-image: linear-gradient(to right, var(--BlueDark), var(--GrayLight) 15%, var(--GrayLight) 85%, var(--BlueDark));
+	background-image: linear-gradient(to right, var(--BlueDark), var(--GrayDark) 15%, var(--GrayDark) 85%, var(--BlueDark));
 	transition: 0.25s;
 }
 	/* Seal/Icon Images */
@@ -458,6 +476,8 @@ i {
 
 			/* Dimensions */
 			width: 45vw;
+			/* Position/Attributes */
+			vertical-align: middle;
 		}
 
 	/* Content Language Tables*/
@@ -484,6 +504,9 @@ i {
 
 			/* Dimensions */
 			width: 35vw;
+
+			/* Position/Attributes */
+			vertical-align: middle;
 		}
 
 	/* Content Overall Progress*/
@@ -494,6 +517,7 @@ i {
 		/* Position/Attributes */
 		border-radius: 5vh;
 		padding: .7vh;
+		margin: auto;
 	}
 		.ProgressBarOverall > div{
 			/* Dimensions */
@@ -513,6 +537,7 @@ i {
 		/* Position/Attributes */
 		border-radius: 5vh;
 		padding: .5vh;
+			margin: auto;
 	}
 		.ProgressBarLanguage > div{
 			/* Dimensions */

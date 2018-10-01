@@ -39,11 +39,11 @@ function UpdateNav(index){
     var NavLink = document.getElementById(NavLinks[i]);
 // Not Visible
 if(i != index ){
-  NavLink.setAttribute("style","background-image: linear-gradient(to bottom, var(--RedLight ), var(--RedDark )); background-repeat:  no-repeat; background-size: 100% 100%;");
+    NavLink.setAttribute("style","background: var(--BlueDark );");
 }
 //Visible
 else{
-  NavLink.setAttribute("style","background-image: linear-gradient(to bottom, var(--RedLight ), var(--GrayDark )); background-repeat:  no-repeat; background-size: 100% 100%;");
+    NavLink.setAttribute("style","background: var(--BlueLight );");
 }
 }
 }
@@ -100,7 +100,7 @@ function ExpandHeader(){
 function ClearNavLinkSelection(){
   for(i=0; i < HeadersLength; ++i ){
     var NavLink = document.getElementById(NavLinks[i]);
-    NavLink.setAttribute("style","background-image: linear-gradient(to bottom, var(--RedLight ), var(--RedDark )); background-repeat:  no-repeat; background-size: 100% 100%;");
+    NavLink.setAttribute("style","background: var(--BlueDark );");
     if(NavLink.classList.contains("selected")){
       NavLink.classList.remove("selected");
 

@@ -3,7 +3,7 @@
 var FrontEndSkills = [
 ["LanguageProgressCSS",        6],
 ["LanguageProgressHTML",       5],
-["LanguageProgressJavaScript", 8],
+["LanguageProgressJavaScript", 7],
 ["LanguageProgressJQuery",     2]
 ],
 BackEndSkills = [
