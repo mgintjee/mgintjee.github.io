@@ -77,6 +77,7 @@ function CompressHeader(){
   var AboutContent = document.getElementById("ContentAbout");
   var Spacer = document.getElementById("Spacer");
 
+  HeaderNav.setAttribute("style", "border-bottom-style: solid; border-bottom-width: thin;");
   HeaderNav.style.height = "10vh";
   Spacer.style.height= "10vh";
   Spacer.style.margin = "0";
@@ -89,6 +90,7 @@ function ExpandHeader(){
   var AboutContent = document.getElementById("ContentAbout");
   var Spacer = document.getElementById("Spacer");
 
+  HeaderNav.setAttribute("style", "border-bottom-style: none; border-bottom-width: none;");
   HeaderNav.style.height = "90vh";
   Spacer.style.height= "10vh";
   Spacer.style.marginTop = "90vh";

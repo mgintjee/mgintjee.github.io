@@ -188,7 +188,7 @@ i {
 	/*
 	background-image: linear-gradient(to bottom, var(--RedLight) 45%, var(--RedDark));
 	*/
-	background: var(--RedLight);
+	background: var(--GrayDark);
 	transition: 0.25s; 
 }
 
@@ -208,7 +208,7 @@ i {
 		/*
 		background-image: linear-gradient(to bottom, var(--RedLight), var(--GrayDark	));
 		*/
-		background: var(--GrayLight);
+		background: var(--BlueLight);
 		border-radius: 	5vw;
 		transition: 0.25s; 
 	} 
@@ -402,7 +402,7 @@ i {
 	margin-top: 90vh;
 
 	/* Aesthetics */
-	background-image: linear-gradient(to bottom, var(--RedLight), var(--BlueLight));
+	background-image: linear-gradient(to bottom, var(--GrayDark), var(--BlueLight));
 	transition: 0.25s;
 }
 
