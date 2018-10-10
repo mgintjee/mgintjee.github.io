@@ -195,14 +195,14 @@ i {
 	/* Wrapper Header Table */
 	#WrapperHeader > #HeaderContainer{
 		/* Dimensions */
-		height: 60vh;
+		height: 70vh;
 		width: 70vw;
 
 		/* Position/Attributes */
 		margin: auto;
-		margin-top: 15vh;
+		margin-top: 5vh;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 
 		/* Aesthetics */
 		/*
@@ -216,19 +216,19 @@ i {
 	/* Wrapper Header Table */
 	#WrapperHeader > #HeaderContainer > .Container{
 		/* Dimensions */
-		height: 60vh;
+		height: 35vh;
 		width: 35vw;
 
 		/* Position/Attributes */
 		margin: auto;
-		padding: 2vh 2vw;
+	    padding-top: 1vh; 
 	}
 
 	/* Container For Welcome Intro */
 	#WrapperHeader > #HeaderContainer > #ContainerIntro{
 		/* Position/Attributes */
-		margin: auto;
-		top: 50%;
+		max-height: 39vh;
+		max-width: 	25vw;
 	}
 
 	/* Container For Welcome Content */
@@ -237,18 +237,27 @@ i {
 		width: 	30vw;
 
 		/* Position/Attributes */
-		margin: auto;
+		padding-left: 1vw;
 	}
 
 	/* Welcome Image */
-	#WrapperHeader > #HeaderContainer > #ContainerImage img{
+	#WrapperHeader > #HeaderContainer > #ContainerImage{
 		/* Dimensions */
-		height: 50vh;
+		height: 39vh;
 		width: 	25vw;
 
 		/* Position/Attributes */
 	    display: block;
 	    margin: auto;
+	}
+	/* Welcome Image */
+	#WrapperHeader > #HeaderContainer > #ContainerImage img{
+		max-height: 39vh;
+		max-width: 	25vw;
+
+		/* Position/Attributes */
+	    display: block;
+	    margin: 0 auto;
 
 		/* Aesthetics */
 		border-radius: 	10vw;
@@ -721,9 +730,9 @@ i {
 	    border-width: 0 .15em .15em 0;
 	}
 
-	/* Wrapper Header Table */
+	/* Wrapper Header Table 
 	#WrapperHeader > #HeaderContainer{
 		display: flex;
 		flex-direction: row;
-	} 
+	} */
 }

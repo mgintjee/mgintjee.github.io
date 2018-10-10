@@ -79,7 +79,6 @@ function CompressHeader(){
 
   HeaderNav.setAttribute("style", "border-bottom-style: solid; border-bottom-width: thin;");
   HeaderNav.style.height = "10vh";
-  Spacer.style.height= "10vh";
   Spacer.style.margin = "0";
   HeaderContainer.style.display = "none";
 }
@@ -92,7 +91,6 @@ function ExpandHeader(){
 
   HeaderNav.setAttribute("style", "border-bottom-style: none; border-bottom-width: none;");
   HeaderNav.style.height = "90vh";
-  Spacer.style.height= "10vh";
   Spacer.style.marginTop = "90vh";
   HeaderContainer.style.display = "flex";
 
