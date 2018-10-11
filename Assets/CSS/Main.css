@@ -517,7 +517,10 @@ i {
 			/* Position/Attributes */
 			vertical-align: middle;
 		}
-
+	/* Content Contact Table */
+	#ContentContact > .Table{
+		margin: auto;
+	}
 	/* Content Overall Progress*/
 	.ProgressBarOverall{
 		/* Dimensions */
@@ -646,7 +649,7 @@ i {
 
 	/* Welcome Image */
 	#WrapperHeader > #HeaderContainer > #ContainerImage img{
-		height: 30vh;
+		max-height: 30vh;
 	}
 }
 
@@ -692,7 +695,7 @@ i {
 
 	/* Welcome Image */
 	#WrapperHeader > #HeaderContainer > #ContainerImage img{
-		height: 30vh;
+		max-height: 30vh;
 	}
 }
 
