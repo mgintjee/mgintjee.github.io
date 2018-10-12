@@ -261,7 +261,7 @@ i {
 	{
 		text-align: center;
 	}
-	
+
 	/* Wrapper Header Table */
 	#WrapperHeader nav{
 		/* Dimensions */
@@ -609,8 +609,7 @@ i {
 	}
 }
 
-/* Mobile/Vertical Display */
-/* Minimize Text More */
+/* Smallest Dimensions */
 @media (min-width: 370px) and (max-width: 649px){
 	/* General h1 Tag */
 	h1{
@@ -656,7 +655,7 @@ i {
 	}
 }
 
-/* Mobile/Vertical Display */
+/* Medium Dimensions */
 @media (min-width: 650px) and (max-width: 802px){
 	/* General h1 Tag */
 	h1{
@@ -703,7 +702,7 @@ i {
 }
 
 /* General/Horizontal Display */
-@media (min-width: 803px){
+@media (min-width: 803px ){
 	/* General h1 Tag */
 	h1{
 		/* Aesthetics */
