@@ -88,7 +88,7 @@ i {
     display: inline-block;
 
 	/* Aesthetics */
-	vertical-align: middle;
+    vertical-align: baseline;
 }
 
 .right {
@@ -138,7 +138,7 @@ i {
 
 		/* Aesthetics */
 		color: black;
-		font-family: "Lucida Console", Monaco, monospace;
+		font-family: 'Oxygen Mono'; /*"Lucida Console", Monaco, monospace;*/
 		text-decoration: none; 
 	}
 
@@ -213,58 +213,58 @@ i {
 		transition: 0.25s; 
 	} 
 
-	/* Wrapper Header Table */
-	#WrapperHeader > #HeaderContainer > .Container{
-		/* Dimensions */
-		height: 35vh;
-		width: 35vw;
-
-		/* Position/Attributes */
-		margin: auto;
-	    padding-top: 1vh; 
-	}
-
-	/* Container For Welcome Intro */
-	#WrapperHeader > #HeaderContainer > #ContainerIntro{
-		/* Position/Attributes */
-		max-height: 39vh;
-		max-width: 	25vw;
-	}
-
-	/* Container For Welcome Content */
-	#WrapperHeader > #HeaderContainer > #ContainerIntro > #ContentWelcome{
-		/* Dimensions */
-		width: 	30vw;
-
-		/* Position/Attributes */
-		padding-left: 1vw;
-	}
-
 	/* Welcome Image */
 	#WrapperHeader > #HeaderContainer > #ContainerImage{
-		/* Dimensions */
-		height: 39vh;
-		width: 	25vw;
-
 		/* Position/Attributes */
-	    display: block;
-	    margin: auto;
-	}
-	/* Welcome Image */
-	#WrapperHeader > #HeaderContainer > #ContainerImage img{
-		max-height: 39vh;
-		max-width: 	25vw;
-
-		/* Position/Attributes */
-	    display: block;
-	    margin: 0 auto;
+	    margin-top: 1vh; 
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-content: center;
 
 		/* Aesthetics */
-		border-radius: 	10vw;
-		border-style: solid;
+		border-radius: 	10vmin;
 		border-width: thin;
 	}
 
+	/* Welcome Image */
+	#WrapperHeader > #HeaderContainer > #ContainerImage img{
+		/* Dimensions */
+		max-height: 35vh;
+		max-width: 	25vw;
+
+		/* Position/Attributes */
+		padding: 1vh 1vw;
+		display: block;
+		margin: auto;
+
+		/* Aesthetics */
+		background: var(--GrayDark);
+		border-radius: 	10vmin;
+		border-width: thin;
+	}
+
+	/* Wrapper Header Table */
+	#WrapperHeader > #HeaderContainer > #ContainerIntro{
+		/* Dimensions */
+		height: 25vh;
+		width: 50vw;
+
+		/* Position/Attributes */
+	    display: block;
+		margin: auto;
+	    margin-top: 1vh; 
+	}
+
+	/* Text centering For Welcome Intro */
+	#WrapperHeader > #HeaderContainer > #ContainerIntro h1,
+	#WrapperHeader > #HeaderContainer > #ContainerIntro h2,
+	#WrapperHeader > #HeaderContainer > #ContainerIntro > #ContentWelcome h3,
+	#WrapperHeader > #HeaderContainer > #ContainerIntro > #ContentWelcome a,
+	#WrapperHeader > #HeaderContainer > #ContainerIntro > #ContentWelcome p
+	{
+		text-align: center;
+	}
 	/* Wrapper Header Table */
 	#WrapperHeader nav{
 		/* Dimensions */
@@ -397,6 +397,12 @@ i {
 		border-width: thin;
 	}
 
+	/* ContentAbout a & p */
+	#ContentAbout p,
+	#ContentAbout a{
+		margin-left: 2.5vw;
+	}
+
 
 /*********
 * Spacer *
@@ -442,7 +448,7 @@ i {
 	    margin-right: auto;
 
 		/* Aesthetics */
-		border-radius: 	2.5vw;
+		border-radius: 	2.5vmin;
 		border-style: solid;
 		border-width: thin;
 	}
@@ -527,7 +533,7 @@ i {
 		width: 40vw;
 
 		/* Position/Attributes */
-		border-radius: 5vh;
+		border-radius: 5vmin;
 		padding: .7vh;
 		margin: auto;
 	}
@@ -536,7 +542,7 @@ i {
 			height: 3vh;
 			
 			/* Position/Attributes */
-			border-radius: 3vh;
+			border-radius: 3vmin;
 			width: 0vw; 
 		}
 
@@ -547,7 +553,7 @@ i {
 		width: 30vw;
 
 		/* Position/Attributes */
-		border-radius: 5vh;
+		border-radius: 5vmin;
 		padding: .5vh;
 			margin: auto;
 	}
@@ -557,7 +563,7 @@ i {
 
 			/* Position/Attributes */
 			width: 0vw; 
-			border-radius: 3vh;
+			border-radius: 3vmin;
 		}
 
 /* No Welcome Image Display */
@@ -654,7 +660,7 @@ i {
 }
 
 /* Mobile/Vertical Display */
-@media (min-width: 650px) and (max-width: 749px){
+@media (min-width: 650px) and (max-width: 802px){
 	/* General h1 Tag */
 	h1{
 		/* Aesthetics */
@@ -700,7 +706,7 @@ i {
 }
 
 /* General/Horizontal Display */
-@media (min-width: 750px){
+@media (min-width: 803px){
 	/* General h1 Tag */
 	h1{
 		/* Aesthetics */
